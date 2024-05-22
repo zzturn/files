@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA_EXPORT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LOCATION address="5356 Edger Dr, Cincinnati, OH 45239, Cincinnati OH  45239" lat="39.18420447409629" long="-84.58147779107095"/>
+  <STRUCTURES>
+    <ROOF id="ROOF1">
+      <FACES>
+        <FACE id="F1" type="ROOF" name="RF-1">
+          <POLYGON id="P1" path="L1,L2,L3,L4" size="629.9150536578464" pitch="6"/>
+        </FACE>
+        <FACE id="F2" type="ROOF" name="RF-2">
+          <POLYGON id="P2" path="L5,L6,L1,L7" size="612.1509359730613" pitch="6"/>
+        </FACE>
+        <FACE id="F3" type="WALL" children="F4,F5,F6,F7,F8" name="SI-1">
+          <POLYGON id="P3" path="L8,L9,L10,L11,L12,L13,L14,L15,L16,L17,L18,L19,L20,L21" size="317.40515518384774"/>
+        </FACE>
+        <FACE id="F4" type="WALLPENETRATION">
+          <POLYGON id="P4" path="L22,L23,L24,L25" pitch="Infinity"/>
+        </FACE>
+        <FACE id="F5" type="WALLPENETRATION">
+          <POLYGON id="P5" path="L26,L27,L28,L29" pitch="Infinity"/>
+        </FACE>
+        <FACE id="F6" type="WALLPENETRATION">
+          <POLYGON id="P6" path="L30,L31,L32,L33" pitch="Infinity"/>
+        </FACE>
+        <FACE id="F7" type="WALLPENETRATION">
+          <POLYGON id="P7" path="L34,L35,L36,L37" pitch="Infinity"/>
+        </FACE>
+        <FACE id="F8" type="WALLPENETRATION">
+          <POLYGON id="P8" path="L38,L39,L40,L41,L42,L43" pitch="Infinity"/>
+        </FACE>
+        <FACE id="F9" type="WALL" children="" name="SI-2">
+          <POLYGON id="P9" path="L44,L45,L46,L47,L48,L49,L50" size="443.16756207659785"/>
+        </FACE>
+        <FACE id="F10" type="WALL" children="F11,F12,F13" name="SI-3">
+          <POLYGON id="P10" path="L51,L52,L53,L54" size="482.8100677160449"/>
+        </FACE>
+        <FACE id="F11" type="WALLPENETRATION">
+          <POLYGON id="P11" path="L55,L56,L57,L58" pitch="Infinity"/>
+        </FACE>
+        <FACE id="F12" type="WALLPENETRATION">
+          <POLYGON id="P12" path="L59,L60,L61,L62" pitch="Infinity"/>
+        </FACE>
+        <FACE id="F13" type="WALLPENETRATION">
+          <POLYGON id="P13" path="L63,L64,L65,L66" pitch="Infinity"/>
+        </FACE>
+        <FACE id="F14" type="WALL" children="" name="SI-4">
+          <POLYGON id="P14" path="L67,L68,L69,L70,L71,L72,L73" size="443.16719530854107"/>
+        </FACE>
+        <FACE id="F15" type="WALL" children="" name="Unclassified-9">
+          <POLYGON id="P15" path="L74,L75,L76,L77,L53,L78" size="60.64001626969176"/>
+        </FACE>
+        <FACE id="F16" type="WALL" children="" name="Unclassified-12">
+          <POLYGON id="P16" path="L79,L80,L81,L82,L69,L83,L76" size="51.30945893619182"/>
+        </FACE>
+        <FACE id="F17" type="WALL" children="" name="Unclassified-13">
+          <POLYGON id="P17" path="L84,L85,L86,L74,L87,L49,L88,L89" size="44.626538262125194"/>
+        </FACE>
+        <FACE id="F18" type="WALL" children="" name="Unclassified-14">
+          <POLYGON id="P18" path="L90,L17,L91,L81,L92,L93,L94,L95,L96,L97" size="35.40194990374969"/>
+        </FACE>
+        <FACE id="F19" type="WALL" children="" name="Unclassified-15">
+          <POLYGON id="P19" path="L98,L99,L15,L100,L101,L102" size="31.794271879138616"/>
+        </FACE>
+        <FACE id="F20" type="WALL" children="" name="Unclassified-16">
+          <POLYGON id="P20" path="L103,L5,L104,L105" size="28.501856680261508"/>
+        </FACE>
+        <FACE id="F21" type="WALL" children="" name="Unclassified-17">
+          <POLYGON id="P21" path="L106,L102,L107,L3" size="24.77999419835333"/>
+        </FACE>
+        <FACE id="F22" type="WALL" children="" name="Unclassified-18">
+          <POLYGON id="P22" path="L94,L108,L109,L110" size="24.270980685634168"/>
+        </FACE>
+        <FACE id="F23" type="WALL" children="" name="Unclassified-20">
+          <POLYGON id="P23" path="L104,L7,L4,L107,L101,L111,L112,L47,L46,L45,L113,L114" size="17.127505814221546"/>
+        </FACE>
+        <FACE id="F24" type="WALL" children="" name="Unclassified-21">
+          <POLYGON id="P24" path="L106,L2,L6,L103,L115,L116,L73,L72,L71,L117,L118,L98" size="17.127505411850876"/>
+        </FACE>
+        <FACE id="F25" type="WALL" children="" name="Unclassified-28">
+          <POLYGON id="P25" path="L119,L109,L120,L121,L122,L123,L124,L125" size="12.194193630692261"/>
+        </FACE>
+        <FACE id="F26" type="WALL" children="" name="Unclassified-29">
+          <POLYGON id="P26" path="L115,L105,L114,L126,L51,L127" size="10.640172484704694"/>
+        </FACE>
+        <FACE id="F27" type="WALL" children="" name="Unclassified-30">
+          <POLYGON id="P27" path="L95,L110,L119,L128" size="10.13869598816763"/>
+        </FACE>
+        <FACE id="F28" type="WALL" children="" name="Unclassified-33">
+          <POLYGON id="P28" path="L129,L120,L108,L93" size="7.191493723229887"/>
+        </FACE>
+        <FACE id="F29" type="WALL" children="" name="Unclassified-40">
+          <POLYGON id="P29" path="L130,L131,L89,L132,L13,L133,L134,L135" size="4.281787967819377"/>
+        </FACE>
+        <FACE id="F30" type="WALL" children="" name="Unclassified-41">
+          <POLYGON id="P30" path="L136,L137,L138,L124,L139,L140,L141,L142" size="4.556252814103878"/>
+        </FACE>
+        <FACE id="F31" type="WALL" children="" name="Unclassified-42">
+          <POLYGON id="P31" path="L143,L144,L145,L146,L147,L122,L148,L149" size="4.556254081269944"/>
+        </FACE>
+        <FACE id="F32" type="WALL" children="" name="Unclassified-51">
+          <POLYGON id="P32" path="L123,L147,L150,L139" size="3.2766068494954745"/>
+        </FACE>
+        <FACE id="F33" type="WALL" children="" name="Unclassified-52">
+          <POLYGON id="P33" path="L141,L151,L145,L152" size="2.9344137723915122"/>
+        </FACE>
+        <FACE id="F34" type="WALL" children="" name="Unclassified-53">
+          <POLYGON id="P34" path="L136,L153,L143,L154" size="1.8428605487412877"/>
+        </FACE>
+        <FACE id="F35" type="WALL" children="" name="Unclassified-54">
+          <POLYGON id="P35" path="L142,L152,L144,L153" size="2.0272893038092876"/>
+        </FACE>
+        <FACE id="F36" type="WALL" children="" name="Unclassified-55">
+          <POLYGON id="P36" path="L137,L154,L149,L155" size="2.027289024302626"/>
+        </FACE>
+        <FACE id="F37" type="WALL" children="" name="Unclassified-56">
+          <POLYGON id="P37" path="L140,L150,L146,L151" size="1.8945334848898068"/>
+        </FACE>
+        <FACE id="F38" type="WALL" children="" name="W-101">
+          <POLYGON id="P38" path="L156,L157,L158,L159" size="8.90662217494242"/>
+        </FACE>
+        <FACE id="F39" type="WALL" children="" name="W-102">
+          <POLYGON id="P39" path="L160,L161,L162,L163" size="8.90662217494242"/>
+        </FACE>
+        <FACE id="F40" type="WALL" children="" name="W-203">
+          <POLYGON id="P40" path="L164,L165,L166,L167" size="11.882750067415285"/>
+        </FACE>
+        <FACE id="F41" type="WALL" children="" name="W-204">
+          <POLYGON id="P41" path="L168,L169,L170,L171" size="11.882750067415225"/>
+        </FACE>
+        <FACE id="F42" type="WALL" children="" name="W-205">
+          <POLYGON id="P42" path="L172,L173,L174,L175" size="16.54088604572687"/>
+        </FACE>
+        <FACE id="F43" type="WALL" children="" name="W-206">
+          <POLYGON id="P43" path="L176,L177,L178,L179" size="16.540886045726886"/>
+        </FACE>
+        <FACE id="F44" type="WALL" children="" name="W-207">
+          <POLYGON id="P44" path="L180,L181,L182,L183" size="12.694005383668808"/>
+        </FACE>
+        <FACE id="F45" type="WALL" children="" name="W-208">
+          <POLYGON id="P45" path="L184,L185,L186,L187" size="12.694005383668792"/>
+        </FACE>
+        <FACE id="F46" type="WALL" children="" name="D-1">
+          <POLYGON id="P46" path="L188,L189,L190,L191" size="37.73519153830609"/>
+        </FACE>
+        <FACE id="F47" type="WALL" children="" name="D-2">
+          <POLYGON id="P47" path="L192,L193,L194,L195,L196" size="56.66664962534192"/>
+        </FACE>
+        <FACE id="F48" type="WALL" children="" name="D-3">
+          <POLYGON id="P48" path="L197,L198,L199,L200,L201" size="56.50553035883953"/>
+        </FACE>
+        <FACE id="F49" type="WALL" children="" name="D-4">
+          <POLYGON id="P49" path="L202,L203,L204,L205" size="19.278202678884412"/>
+        </FACE>
+      </FACES>
+      <LINES>
+        <LINE id="L1" type="RIDGE" path="C1,C2"/>
+        <LINE id="L2" type="RAKE" path="C3,C1"/>
+        <LINE id="L3" type="EAVE" path="C4,C3"/>
+        <LINE id="L4" type="RAKE" path="C2,C4"/>
+        <LINE id="L5" type="EAVE" path="C5,C6"/>
+        <LINE id="L6" type="RAKE" path="C1,C5"/>
+        <LINE id="L7" type="RAKE" path="C6,C2"/>
+        <LINE id="L8" type="BOTTOMWALL" path="C7,C8"/>
+        <LINE id="L9" type="OTHER" path="C9,C7"/>
+        <LINE id="L10" type="OTHER" path="C10,C9"/>
+        <LINE id="L11" type="OTHER" path="C11,C10"/>
+        <LINE id="L12" type="OTHER" path="C12,C11"/>
+        <LINE id="L13" type="BOTTOMWALL" path="C12,C13"/>
+        <LINE id="L14" type="OTHER" path="C13,C14"/>
+        <LINE id="L15" type="TOPWALL" path="C15,C14"/>
+        <LINE id="L16" type="OTHER" path="C15,C16"/>
+        <LINE id="L17" type="BOTTOMWALL" path="C16,C17"/>
+        <LINE id="L18" type="OTHER" path="C18,C17"/>
+        <LINE id="L19" type="OTHER" path="C19,C18"/>
+        <LINE id="L20" type="OTHER" path="C20,C19"/>
+        <LINE id="L21" type="OTHER" path="C8,C20"/>
+        <LINE id="L22" type="OTHER" path="C21,C22"/>
+        <LINE id="L23" type="OTHER" path="C22,C23"/>
+        <LINE id="L24" type="OTHER" path="C23,C24"/>
+        <LINE id="L25" type="OTHER" path="C24,C21"/>
+        <LINE id="L26" type="OTHER" path="C25,C26"/>
+        <LINE id="L27" type="OTHER" path="C26,C27"/>
+        <LINE id="L28" type="OTHER" path="C27,C28"/>
+        <LINE id="L29" type="OTHER" path="C28,C25"/>
+        <LINE id="L30" type="OTHER" path="C29,C30"/>
+        <LINE id="L31" type="OTHER" path="C30,C31"/>
+        <LINE id="L32" type="OTHER" path="C31,C32"/>
+        <LINE id="L33" type="OTHER" path="C32,C29"/>
+        <LINE id="L34" type="OTHER" path="C33,C34"/>
+        <LINE id="L35" type="OTHER" path="C34,C35"/>
+        <LINE id="L36" type="OTHER" path="C35,C36"/>
+        <LINE id="L37" type="OTHER" path="C36,C33"/>
+        <LINE id="L38" type="OTHER" path="C37,C38"/>
+        <LINE id="L39" type="OTHER" path="C39,C37"/>
+        <LINE id="L40" type="OTHER" path="C39,C40"/>
+        <LINE id="L41" type="OTHER" path="C40,C41"/>
+        <LINE id="L42" type="OTHER" path="C41,C42"/>
+        <LINE id="L43" type="OTHER" path="C42,C38"/>
+        <LINE id="L44" type="BOTTOMWALL" path="C43,C44"/>
+        <LINE id="L45" type="OTHER" path="C45,C44"/>
+        <LINE id="L46" type="TOPWALL" path="C46,C45"/>
+        <LINE id="L47" type="TOPWALL" path="C47,C46"/>
+        <LINE id="L48" type="OTHER" path="C47,C48"/>
+        <LINE id="L49" type="BOTTOMWALL" path="C48,C49"/>
+        <LINE id="L50" type="OTHER" path="C49,C43"/>
+        <LINE id="L51" type="TOPWALL" path="C50,C51"/>
+        <LINE id="L52" type="OTHER" path="C50,C52"/>
+        <LINE id="L53" type="BOTTOMWALL" path="C52,C53"/>
+        <LINE id="L54" type="OTHER" path="C53,C51"/>
+        <LINE id="L55" type="OTHER" path="C54,C55"/>
+        <LINE id="L56" type="OTHER" path="C55,C56"/>
+        <LINE id="L57" type="OTHER" path="C56,C57"/>
+        <LINE id="L58" type="OTHER" path="C57,C54"/>
+        <LINE id="L59" type="OTHER" path="C58,C59"/>
+        <LINE id="L60" type="OTHER" path="C59,C60"/>
+        <LINE id="L61" type="OTHER" path="C60,C61"/>
+        <LINE id="L62" type="OTHER" path="C61,C58"/>
+        <LINE id="L63" type="OTHER" path="C62,C63"/>
+        <LINE id="L64" type="OTHER" path="C63,C64"/>
+        <LINE id="L65" type="OTHER" path="C64,C65"/>
+        <LINE id="L66" type="OTHER" path="C65,C62"/>
+        <LINE id="L67" type="BOTTOMWALL" path="C66,C67"/>
+        <LINE id="L68" type="OTHER" path="C67,C68"/>
+        <LINE id="L69" type="BOTTOMWALL" path="C68,C69"/>
+        <LINE id="L70" type="OTHER" path="C69,C70"/>
+        <LINE id="L71" type="TOPWALL" path="C71,C70"/>
+        <LINE id="L72" type="TOPWALL" path="C72,C71"/>
+        <LINE id="L73" type="OTHER" path="C66,C72"/>
+        <LINE id="L74" type="OTHER" path="C73,C74"/>
+        <LINE id="L75" type="OTHER" path="C75,C74"/>
+        <LINE id="L76" type="OTHER" path="C75,C76"/>
+        <LINE id="L77" type="OTHER" path="C76,C53"/>
+        <LINE id="L78" type="OTHER" path="C52,C73"/>
+        <LINE id="L79" type="OTHER" path="C77,C75"/>
+        <LINE id="L80" type="OTHER" path="C78,C77"/>
+        <LINE id="L81" type="OTHER" path="C78,C79"/>
+        <LINE id="L82" type="OTHER" path="C79,C69"/>
+        <LINE id="L83" type="OTHER" path="C68,C76"/>
+        <LINE id="L84" type="OTHER" path="C80,C81"/>
+        <LINE id="L85" type="OTHER" path="C82,C80"/>
+        <LINE id="L86" type="OTHER" path="C74,C82"/>
+        <LINE id="L87" type="OTHER" path="C73,C49"/>
+        <LINE id="L88" type="OTHER" path="C48,C83"/>
+        <LINE id="L89" type="OTHER" path="C83,C81"/>
+        <LINE id="L90" type="OTHER" path="C17,C84"/>
+        <LINE id="L91" type="OTHER" path="C16,C79"/>
+        <LINE id="L92" type="OTHER" path="C85,C78"/>
+        <LINE id="L93" type="OTHER" path="C85,C86"/>
+        <LINE id="L94" type="OTHER" path="C87,C86"/>
+        <LINE id="L95" type="OTHER" path="C87,C88"/>
+        <LINE id="L96" type="OTHER" path="C89,C88"/>
+        <LINE id="L97" type="OTHER" path="C84,C89"/>
+        <LINE id="L98" type="OTHER" path="C90,C91"/>
+        <LINE id="L99" type="OTHER" path="C90,C15"/>
+        <LINE id="L100" type="OTHER" path="C14,C92"/>
+        <LINE id="L101" type="OTHER" path="C93,C92"/>
+        <LINE id="L102" type="OTHER" path="C91,C93"/>
+        <LINE id="L103" type="OTHER" path="C5,C94"/>
+        <LINE id="L104" type="OTHER" path="C95,C6"/>
+        <LINE id="L105" type="OTHER" path="C94,C95"/>
+        <LINE id="L106" type="OTHER" path="C91,C3"/>
+        <LINE id="L107" type="OTHER" path="C4,C93"/>
+        <LINE id="L108" type="OTHER" path="C86,C96"/>
+        <LINE id="L109" type="OTHER" path="C96,C97"/>
+        <LINE id="L110" type="OTHER" path="C97,C87"/>
+        <LINE id="L111" type="OTHER" path="C92,C98"/>
+        <LINE id="L112" type="OTHER" path="C98,C47"/>
+        <LINE id="L113" type="OTHER" path="C44,C99"/>
+        <LINE id="L114" type="OTHER" path="C95,C99"/>
+        <LINE id="L115" type="OTHER" path="C100,C94"/>
+        <LINE id="L116" type="OTHER" path="C100,C66"/>
+        <LINE id="L117" type="OTHER" path="C70,C101"/>
+        <LINE id="L118" type="OTHER" path="C101,C90"/>
+        <LINE id="L119" type="OTHER" path="C97,C102"/>
+        <LINE id="L120" type="OTHER" path="C96,C103"/>
+        <LINE id="L121" type="OTHER" path="C104,C103"/>
+        <LINE id="L122" type="OTHER" path="C104,C105"/>
+        <LINE id="L123" type="OTHER" path="C106,C105"/>
+        <LINE id="L124" type="OTHER" path="C106,C107"/>
+        <LINE id="L125" type="OTHER" path="C102,C107"/>
+        <LINE id="L126" type="OTHER" path="C99,C50"/>
+        <LINE id="L127" type="OTHER" path="C51,C100"/>
+        <LINE id="L128" type="OTHER" path="C88,C102"/>
+        <LINE id="L129" type="OTHER" path="C103,C85"/>
+        <LINE id="L130" type="OTHER" path="C108,C109"/>
+        <LINE id="L131" type="OTHER" path="C81,C108"/>
+        <LINE id="L132" type="OTHER" path="C83,C13"/>
+        <LINE id="L133" type="OTHER" path="C110,C12"/>
+        <LINE id="L134" type="OTHER" path="C111,C110"/>
+        <LINE id="L135" type="OTHER" path="C109,C111"/>
+        <LINE id="L136" type="OTHER" path="C112,C113"/>
+        <LINE id="L137" type="OTHER" path="C112,C114"/>
+        <LINE id="L138" type="OTHER" path="C107,C114"/>
+        <LINE id="L139" type="OTHER" path="C115,C106"/>
+        <LINE id="L140" type="OTHER" path="C116,C115"/>
+        <LINE id="L141" type="OTHER" path="C117,C116"/>
+        <LINE id="L142" type="OTHER" path="C117,C113"/>
+        <LINE id="L143" type="OTHER" path="C118,C119"/>
+        <LINE id="L144" type="OTHER" path="C120,C118"/>
+        <LINE id="L145" type="OTHER" path="C121,C120"/>
+        <LINE id="L146" type="OTHER" path="C122,C121"/>
+        <LINE id="L147" type="OTHER" path="C105,C122"/>
+        <LINE id="L148" type="OTHER" path="C123,C104"/>
+        <LINE id="L149" type="OTHER" path="C119,C123"/>
+        <LINE id="L150" type="OTHER" path="C122,C115"/>
+        <LINE id="L151" type="OTHER" path="C116,C121"/>
+        <LINE id="L152" type="OTHER" path="C120,C117"/>
+        <LINE id="L153" type="OTHER" path="C113,C118"/>
+        <LINE id="L154" type="OTHER" path="C119,C112"/>
+        <LINE id="L155" type="OTHER" path="C114,C123"/>
+        <LINE id="L156" type="OTHER" path="C124,C125"/>
+        <LINE id="L157" type="OTHER" path="C126,C124"/>
+        <LINE id="L158" type="OTHER" path="C127,C126"/>
+        <LINE id="L159" type="OTHER" path="C125,C127"/>
+        <LINE id="L160" type="OTHER" path="C128,C129"/>
+        <LINE id="L161" type="OTHER" path="C130,C128"/>
+        <LINE id="L162" type="OTHER" path="C131,C130"/>
+        <LINE id="L163" type="OTHER" path="C129,C131"/>
+        <LINE id="L164" type="OTHER" path="C132,C133"/>
+        <LINE id="L165" type="OTHER" path="C134,C132"/>
+        <LINE id="L166" type="OTHER" path="C135,C134"/>
+        <LINE id="L167" type="OTHER" path="C133,C135"/>
+        <LINE id="L168" type="OTHER" path="C136,C137"/>
+        <LINE id="L169" type="OTHER" path="C138,C136"/>
+        <LINE id="L170" type="OTHER" path="C139,C138"/>
+        <LINE id="L171" type="OTHER" path="C137,C139"/>
+        <LINE id="L172" type="OTHER" path="C140,C141"/>
+        <LINE id="L173" type="OTHER" path="C142,C140"/>
+        <LINE id="L174" type="OTHER" path="C143,C142"/>
+        <LINE id="L175" type="OTHER" path="C141,C143"/>
+        <LINE id="L176" type="OTHER" path="C144,C145"/>
+        <LINE id="L177" type="OTHER" path="C146,C144"/>
+        <LINE id="L178" type="OTHER" path="C147,C146"/>
+        <LINE id="L179" type="OTHER" path="C145,C147"/>
+        <LINE id="L180" type="OTHER" path="C148,C149"/>
+        <LINE id="L181" type="OTHER" path="C150,C148"/>
+        <LINE id="L182" type="OTHER" path="C151,C150"/>
+        <LINE id="L183" type="OTHER" path="C149,C151"/>
+        <LINE id="L184" type="OTHER" path="C152,C153"/>
+        <LINE id="L185" type="OTHER" path="C154,C152"/>
+        <LINE id="L186" type="OTHER" path="C155,C154"/>
+        <LINE id="L187" type="OTHER" path="C153,C155"/>
+        <LINE id="L188" type="OTHER" path="C156,C157"/>
+        <LINE id="L189" type="OTHER" path="C157,C158"/>
+        <LINE id="L190" type="OTHER" path="C158,C159"/>
+        <LINE id="L191" type="OTHER" path="C159,C156"/>
+        <LINE id="L192" type="OTHER" path="C160,C161"/>
+        <LINE id="L193" type="OTHER" path="C162,C160"/>
+        <LINE id="L194" type="OTHER" path="C162,C163"/>
+        <LINE id="L195" type="OTHER" path="C164,C163"/>
+        <LINE id="L196" type="OTHER" path="C161,C164"/>
+        <LINE id="L197" type="OTHER" path="C165,C166"/>
+        <LINE id="L198" type="OTHER" path="C167,C165"/>
+        <LINE id="L199" type="OTHER" path="C167,C168"/>
+        <LINE id="L200" type="OTHER" path="C169,C168"/>
+        <LINE id="L201" type="OTHER" path="C166,C169"/>
+        <LINE id="L202" type="OTHER" path="C170,C171"/>
+        <LINE id="L203" type="OTHER" path="C171,C172"/>
+        <LINE id="L204" type="OTHER" path="C172,C173"/>
+        <LINE id="L205" type="OTHER" path="C173,C170"/>
+      </LINES>
+      <POINTS>
+        <POINT id="C1" data="7.0342210334117015,20.32956739110271,20.58228795609762"/>
+        <POINT id="C2" data="3.1949114298883075,-19.860797979700283,20.58228795609762"/>
+        <POINT id="C3" data="-6.865004854878102,21.657333599300838,13.61960344740099"/>
+        <POINT id="C4" data="-10.704314458401498,-18.533030207075786,13.61960344740099"/>
+        <POINT id="C5" data="20.541476765329758,19.039244163693407,13.8159561657843"/>
+        <POINT id="C6" data="16.702167944019546,-21.151119642683216,13.8159561657843"/>
+        <POINT id="C7" data="-8.923790205112732,-8.175534945340752,-3.4183271600818395"/>
+        <POINT id="C8" data="-8.910901250105551,-8.040612651856636,-3.4183271600818386"/>
+        <POINT id="C9" data="-8.923790552988606,-8.17553491210881,4.045993752397732"/>
+        <POINT id="C10" data="-9.620657109736717,-15.470419190724556,4.04599375239773"/>
+        <POINT id="C11" data="-9.766035678419202,-16.992260333641994,2.821355679257937"/>
+        <POINT id="C12" data="-9.766035551984418,-16.992260345720073,-0.3268700787401389"/>
+        <POINT id="C13" data="-9.896602703601811,-18.359052250747013,-0.32687007874014107"/>
+        <POINT id="C14" data="-9.89660270360021,-18.359052250730258,13.00583204885172"/>
+        <POINT id="C15" data="-6.10484068711505,21.333579027442156,13.005832048851724"/>
+        <POINT id="C16" data="-6.10484068711505,21.333579027442156,-0.32687007874014107"/>
+        <POINT id="C17" data="-8.065849463004316,0.8054978225030576,-0.3268700787401403"/>
+        <POINT id="C18" data="-8.065849574879135,0.8054978331902439,2.7297858309437117"/>
+        <POINT id="C19" data="-8.209596142020539,-0.6992589399042383,4.045993752397728"/>
+        <POINT id="C20" data="-8.910901530634165,-8.040612625058246,4.045993752397738"/>
+        <POINT id="C21" data="-9.127826212826202,-10.311405364941196,7.467153567780382"/>
+        <POINT id="C22" data="-9.127826212826202,-10.311405364941196,12.458622879425425"/>
+        <POINT id="C23" data="-9.497204481757153,-14.178102527659417,12.458622879425425"/>
+        <POINT id="C24" data="-9.497204481757153,-14.178102527659417,7.467153567780382"/>
+        <POINT id="C25" data="-8.314773334910758,-1.8002678113586768,12.458622879425425"/>
+        <POINT id="C26" data="-8.684151603841709,-5.666964974076895,12.458622879425425"/>
+        <POINT id="C27" data="-8.684151603841709,-5.666964974076895,7.467153567780382"/>
+        <POINT id="C28" data="-8.314773334910758,-1.8002678113586768,7.467153567780382"/>
+        <POINT id="C29" data="-6.438559606652667,17.84016832124084,12.458622879425425"/>
+        <POINT id="C30" data="-6.9759874406729905,12.214307636511089,12.458622879425425"/>
+        <POINT id="C31" data="-6.9759874406729905,12.214307636511089,7.467153567780382"/>
+        <POINT id="C32" data="-6.438559606652667,17.84016832124084,7.467153567780382"/>
+        <POINT id="C33" data="-6.9759874406729905,12.214307636511089,4.266499471400334"/>
+        <POINT id="C34" data="-6.9759874406729905,12.214307636511089,0.4416968264219772"/>
+        <POINT id="C35" data="-6.438559606652667,17.84016832124084,0.4416968264219772"/>
+        <POINT id="C36" data="-6.438559606652667,17.84016832124084,4.266499471400334"/>
+        <POINT id="C37" data="-7.347834147269562,8.321770674091637,7.436121609600601"/>
+        <POINT id="C38" data="-7.347834147269562,8.321770674091637,-0.12715850862383604"/>
+        <POINT id="C39" data="-7.5482474005748985,6.223819869747287,8.4691538466689"/>
+        <POINT id="C40" data="-7.746223045376592,4.151386253695402,8.4691538466689"/>
+        <POINT id="C41" data="-7.9280495903548385,2.2480034184939193,7.436121609600601"/>
+        <POINT id="C42" data="-7.928049623089264,2.2480034216209765,-0.1271585086238365"/>
+        <POINT id="C43" data="16.190949771783483,-21.10228323809232,13.109998596621944"/>
+        <POINT id="C44" data="16.310199517000534,-21.113674935424267,13.10999859662194"/>
+        <POINT id="C45" data="16.310199517000534,-21.113674935424267,13.398537485618297"/>
+        <POINT id="C46" data="3.1949115366993737,-19.860796861588376,19.96851499312195"/>
+        <POINT id="C47" data="-9.671509396689137,-18.631692575018576,13.52320504175818"/>
+        <POINT id="C48" data="-9.671509396689137,-18.631692575018576,-0.3268845685198001"/>
+        <POINT id="C49" data="16.190949771783483,-21.10228323809232,-0.3268845685198088"/>
+        <POINT id="C50" data="16.46359088973293,-20.87719051702357,13.109998596621958"/>
+        <POINT id="C51" data="20.255353353982333,18.81543922867173,13.109998596621963"/>
+        <POINT id="C52" data="16.46359088973293,-20.87719051702357,-0.32687007874016"/>
+        <POINT id="C53" data="20.255353353982716,18.815439228675732,-0.32687007874015567"/>
+        <POINT id="C54" data="19.578024767342875,11.725081364976491,8.704734329232735"/>
+        <POINT id="C55" data="19.578024767342875,11.725081364976491,12.612870307544426"/>
+        <POINT id="C56" data="19.94740309363099,15.591778522215478,12.612870307544426"/>
+        <POINT id="C57" data="19.94740309363099,15.591778522215478,8.704734329232735"/>
+        <POINT id="C58" data="16.849835488768452,-16.83393516932173,12.612870307544426"/>
+        <POINT id="C59" data="17.219213815056566,-12.96723801208274,12.612870307544426"/>
+        <POINT id="C60" data="17.219213815056566,-12.96723801208274,8.704734329232735"/>
+        <POINT id="C61" data="16.849835488768452,-16.83393516932173,8.704734329232735"/>
+        <POINT id="C62" data="19.05086549820972,6.206714145510987,5.5793360750193335"/>
+        <POINT id="C63" data="18.7497473240024,3.054572546135537,5.5793360750193335"/>
+        <POINT id="C64" data="18.7497473240024,3.054572546135537,12.717161468946415"/>
+        <POINT id="C65" data="19.05086549820972,6.206714145510987,12.717161468946415"/>
+        <POINT id="C66" data="20.149508164234366,19.076688613125043,13.109998596621951"/>
+        <POINT id="C67" data="20.030260118067524,19.088080155290108,13.109998596621955"/>
+        <POINT id="C68" data="20.030260118067524,19.088080155290108,-0.3268700787401644"/>
+        <POINT id="C69" data="-5.832199827048459,21.5586724410955,-0.32687007874016144"/>
+        <POINT id="C70" data="-5.832199827048459,21.5586724410955,13.523205041758189"/>
+        <POINT id="C71" data="7.034221033411704,20.329567391102703,19.968514993121957"/>
+        <POINT id="C72" data="20.149508164234366,19.076688613125043,13.3985374856183"/>
+        <POINT id="C73" data="16.439817087700437,-21.126057562525602,-0.32687007874015744"/>
+        <POINT id="C74" data="16.439817087700437,-21.126057562525606,-1.828852170721446"/>
+        <POINT id="C75" data="20.27912715601483,19.06430627417378,-1.828852170721446"/>
+        <POINT id="C76" data="20.27912715601521,19.064306274177785,-0.32687007874015744"/>
+        <POINT id="C77" data="-1.410380003115197,21.136264287756095,-2.569043495523649"/>
+        <POINT id="C78" data="-6.081066872550511,21.582446243128,-2.569043495523649"/>
+        <POINT id="C79" data="-6.081066872550507,21.582446243128,-0.32687007874015744"/>
+        <POINT id="C80" data="-7.328509193853839,-18.855514849110797,-2.326884568519793"/>
+        <POINT id="C81" data="-9.920376443601784,-18.607918787752492,-2.326884568519793"/>
+        <POINT id="C82" data="6.892681121826173,-20.214037632379007,-1.8288521707214402"/>
+        <POINT id="C83" data="-9.920376443601784,-18.607918787752492,-0.3268845685197928"/>
+        <POINT id="C84" data="-8.102852551991836,0.41814501624271755,-0.32687007874014107"/>
+        <POINT id="C85" data="-7.333092131097388,8.47609180358263,-2.5690434955236623"/>
+        <POINT id="C86" data="-7.333092131097388,8.47609180358263,-0.5905213338027252"/>
+        <POINT id="C87" data="-7.976836396529016,1.7372976350336813,-0.5905213338027252"/>
+        <POINT id="C88" data="-7.976836396529016,1.7372976350336813,-3.4183271600818546"/>
+        <POINT id="C89" data="-8.102852551991836,0.4181450162427145,-3.4183271600818546"/>
+        <POINT id="C90" data="-6.081066888774161,21.58244607329681,13.005832048851673"/>
+        <POINT id="C91" data="-6.865004854878102,21.657333599300838,13.005832048851673"/>
+        <POINT id="C92" data="-9.920376492297555,-18.607919297506175,13.005832048851673"/>
+        <POINT id="C93" data="-10.704314458401498,-18.533030207075786,13.005832048851673"/>
+        <POINT id="C94" data="20.541476765329758,19.039244163693407,13.109998596621937"/>
+        <POINT id="C95" data="16.702167944019546,-21.151119642683216,13.109998596621937"/>
+        <POINT id="C96" data="-10.902201879055795,8.817042109221612,-0.5905213338027163"/>
+        <POINT id="C97" data="-11.545946122467361,2.0782479385691364,-0.5905213338027163"/>
+        <POINT id="C98" data="-9.920376492297555,-18.607919297506175,13.398537485618291"/>
+        <POINT id="C99" data="16.43981677027825,-21.126057532202854,13.109998596621937"/>
+        <POINT id="C100" data="20.27912715601483,19.064306274173767,13.109998596621937"/>
+        <POINT id="C101" data="-6.081066888774161,21.58244607329681,13.398537485618291"/>
+        <POINT id="C102" data="-11.54594612244574,2.0782479387954833,-3.4183271600818395"/>
+        <POINT id="C103" data="-10.902201879055795,8.817042109221612,-2.623589567624991"/>
+        <POINT id="C104" data="-11.141382342350242,6.313277824848137,-3.4183271600818386"/>
+        <POINT id="C105" data="-11.141382342350242,6.313277824848137,-1.2757460980277675"/>
+        <POINT id="C106" data="-11.405425262356523,3.5492509325699433,-1.2757460980277675"/>
+        <POINT id="C107" data="-11.405425262356523,3.5492509325699433,-3.4183271600818386"/>
+        <POINT id="C108" data="-9.75146810950773,-16.839765464277317,-2.326884568519807"/>
+        <POINT id="C109" data="-9.75146810950773,-16.839765464277317,-3.4183271600818546"/>
+        <POINT id="C110" data="-9.729032574989525,-16.604907528761284,-0.32687007874014107"/>
+        <POINT id="C111" data="-9.72903228494439,-16.604907556468735,-3.4183271600818386"/>
+        <POINT id="C112" data="-14.29289657612798,3.8250854478420546,-2.688196074618442"/>
+        <POINT id="C113" data="-13.63219551526968,3.7619698391811744,-2.688196074618442"/>
+        <POINT id="C114" data="-14.292896577367465,3.8250854348669825,-3.418327160081839"/>
+        <POINT id="C115" data="-12.580151633014829,3.6614703068270145,-1.2757460980277675"/>
+        <POINT id="C116" data="-12.580151633014829,3.6614703068270145,-1.958064989155046"/>
+        <POINT id="C117" data="-13.63219551526968,3.7619698391811744,-1.958064989155046"/>
+        <POINT id="C118" data="-13.36815319662019,6.525996788905988,-2.688196074618442"/>
+        <POINT id="C119" data="-14.028854257478487,6.589112006460275,-2.688196074618442"/>
+        <POINT id="C120" data="-13.36815319662019,6.525996788905988,-1.958064989155046"/>
+        <POINT id="C121" data="-12.316109314365336,6.425497256551828,-1.958064989155046"/>
+        <POINT id="C122" data="-12.316109314365336,6.425497256551828,-1.2757460980277675"/>
+        <POINT id="C123" data="-14.028854257478487,6.589112006460275,-3.4183271600818386"/>
+        <POINT id="C124" data="-6.696993483326131,15.134850705844409,4.099832804733651"/>
+        <POINT id="C125" data="-6.696993483326131,15.134850705844409,0.6083634930886518"/>
+        <POINT id="C126" data="-6.454408805546617,17.67425695733751,4.099832804733651"/>
+        <POINT id="C127" data="-6.454408805546617,17.67425695733751,0.6083634930886518"/>
+        <POINT id="C128" data="-6.960138241779067,12.380219000414158,4.099832804733653"/>
+        <POINT id="C129" data="-6.960138241779067,12.380219000414158,0.6083634930886511"/>
+        <POINT id="C130" data="-6.717553563999555,14.919625251907254,4.099832804733653"/>
+        <POINT id="C131" data="-6.717553563999555,14.919625251907254,0.6083634930886511"/>
+        <POINT id="C132" data="-6.696993483326131,15.134850705844416,12.291956212758706"/>
+        <POINT id="C133" data="-6.696993483326131,15.134850705844416,7.6338202344470405"/>
+        <POINT id="C134" data="-6.454408805546616,17.67425695733753,12.291956212758706"/>
+        <POINT id="C135" data="-6.454408805546616,17.67425695733753,7.6338202344470405"/>
+        <POINT id="C136" data="-6.960138241779066,12.380219000414177,12.2919562127587"/>
+        <POINT id="C137" data="-6.960138241779066,12.380219000414177,7.633820234447037"/>
+        <POINT id="C138" data="-6.7175535639995525,14.919625251907277,12.2919562127587"/>
+        <POINT id="C139" data="-6.7175535639995525,14.919625251907277,7.633820234447037"/>
+        <POINT id="C140" data="-8.668302404947783,-5.501053610173773,12.291956212758706"/>
+        <POINT id="C141" data="-8.668302404947783,-5.501053610173773,7.633820234447043"/>
+        <POINT id="C142" data="-8.330622533804695,-1.9661791752618651,12.291956212758706"/>
+        <POINT id="C143" data="-8.330622533804695,-1.9661791752618651,7.633820234447043"/>
+        <POINT id="C144" data="-9.481355282863223,-14.012191163756254,12.291956212758713"/>
+        <POINT id="C145" data="-9.481355282863223,-14.012191163756254,7.633820234447049"/>
+        <POINT id="C146" data="-9.143675411720134,-10.477316728844345,12.291956212758713"/>
+        <POINT id="C147" data="-9.143675411720134,-10.477316728844345,7.633820234447049"/>
+        <POINT id="C148" data="17.20336461370157,-13.133149375750776,12.446203640877734"/>
+        <POINT id="C149" data="17.20336461370157,-13.133149375750776,8.871400995899403"/>
+        <POINT id="C150" data="16.86568469012346,-16.668023805653664,12.446203640877734"/>
+        <POINT id="C151" data="16.86568469012346,-16.668023805653664,8.871400995899403"/>
+        <POINT id="C152" data="19.93155389227599,15.425867158547426,12.446203640877728"/>
+        <POINT id="C153" data="19.93155389227599,15.425867158547426,8.871400995899403"/>
+        <POINT id="C154" data="19.593873968697878,11.890992728644536,12.446203640877728"/>
+        <POINT id="C155" data="19.593873968697878,11.890992728644536,8.871400995899403"/>
+        <POINT id="C156" data="-7.912200425354128,2.41391478563483,6.5815746001997075"/>
+        <POINT id="C157" data="-7.36368334509685,8.155859310086585,6.5815746001997075"/>
+        <POINT id="C158" data="-7.36368334690544,8.155859310259357,0.039508158042851994"/>
+        <POINT id="C159" data="-7.912200427162716,2.413914785807601,0.039508158042851495"/>
+        <POINT id="C160" data="-7.356251162181064,0.34682362235280784,2.552648893804375"/>
+        <POINT id="C161" data="-7.476847315710674,-0.915587476388676,3.656877542105247"/>
+        <POINT id="C162" data="-7.356251162181064,0.34682362235280784,-3.4183271600818386"/>
+        <POINT id="C163" data="-8.127297472766065,-7.724581271644652,-3.4183271600818386"/>
+        <POINT id="C164" data="-8.127297472766065,-7.724581271644652,3.656877542105247"/>
+        <POINT id="C165" data="-8.214191971175627,-8.634209163545624,3.656877542105247"/>
+        <POINT id="C166" data="-8.861061938478565,-15.405723116216384,3.656877542105247"/>
+        <POINT id="C167" data="-8.214191971175627,-8.634209163545624,-3.4183271600818386"/>
+        <POINT id="C168" data="-8.982430918635972,-16.676228190344464,-3.4183271600818386"/>
+        <POINT id="C169" data="-8.982430918635972,-16.676228190344464,2.6344916639052665"/>
+        <POINT id="C170" data="19.035016296854725,6.040802781842967,5.746002741686006"/>
+        <POINT id="C171" data="19.035016296854725,6.040802781842967,12.550494802279745"/>
+        <POINT id="C172" data="18.7655965253574,3.2204839098035767,12.550494802279745"/>
+        <POINT id="C173" data="18.7655965253574,3.2204839098035767,5.746002741686006"/>
+      </POINTS>
+    </ROOF>
+  </STRUCTURES>
+</DATA_EXPORT>
