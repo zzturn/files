@@ -1,0 +1,1791 @@
+ {
+	"info": {
+		"_postman_id": "6ed251f1-d4fa-469c-9ce5-7e55c334a94b",
+		"name": "estintel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34759146",
+		"_collection_link": "https://grey-spaceship-720010.postman.co/workspace/dba33806-7329-43aa-8a84-78732c6e08cc/collection/23511846-6ed251f1-d4fa-469c-9ce5-7e55c334a94b?action=share&source=collection_link&creator=34759146"
+	},
+	"item": [
+		{
+			"name": "create changeset",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "bb5213b2-d41a-4db6-a643-1b664fff3af9"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "0871e074-1ae2-405b-b661-52ad6277c5c0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n  \"key\": \"UPDATE_DATA_TYPE_1\",\n  \"name\": \"update-data-type-1\",\n  \"dataType\": [\n    {\n      \"name\": \"Dwelling Type\",\n      \"key\": \"DWELLING_TYPE\",\n      \"type\": \"ENUM\",\n      \"enum\": [\n        {\n          \"name\": \"Single Family Detached\",\n          \"code\": 1,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Single Family Attached\",\n          \"code\": 2,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Duplex\",\n          \"code\": 3,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Triplex\",\n          \"code\": 4,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Town Home\",\n          \"code\": 5,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Row Home\",\n          \"code\": 6,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"2 Family Home\",\n          \"code\": 7,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"3 Family Home\",\n          \"code\": 8,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"4 Family Home\",\n          \"code\": 9,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Multi Family Home\",\n          \"code\": 10,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Mobile Home\",\n          \"code\": 11,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Condominium\",\n          \"code\": 12,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Condominium Detached\",\n          \"code\": 13,\n          \"description\": \"\"\n        },\n        {\n          \"name\": \"Other\",\n          \"code\": 999,\n          \"description\": \"\"\n        }\n      ]\n    },]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/changeset",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"changeset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatefactorgroup",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "72f84918-3958-48d0-8583-276752deeeab"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "aa91a37d-cbd2-4164-820c-f33234f4b315"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"4\",\n  \"key\": \"ESTIMATE\",\n  \"name\": \"Estimate\",\n  \"attribute\": {\n    \"reportType\": \"Estimate\"\n  },\n  \"factor\": [\n    {\n      \"factor\": {\n        \"id\": \"18\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 0\n    },\n    {\n      \"factor\": {\n        \"id\": \"19\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 1\n    },\n    {\n      \"factor\": {\n        \"id\": \"20\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 2\n    },\n    {\n      \"factor\": {\n        \"id\": \"21\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 3\n    },\n    {\n      \"factor\": {\n        \"id\": \"22\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 4\n    },\n    {\n      \"factor\": {\n        \"id\": \"23\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 5\n    },\n    {\n      \"factor\": {\n        \"id\": \"24\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 6\n    },\n    {\n      \"factor\": {\n        \"id\": \"25\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 7\n    },\n    {\n      \"factor\": {\n        \"id\": \"26\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 8\n    },\n    {\n      \"factor\": {\n        \"id\": \"27\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 9\n    },\n    {\n      \"factor\": {\n        \"id\": \"28\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 10\n    },\n    {\n      \"factor\": {\n        \"id\": \"29\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 11\n    },\n    {\n      \"factor\": {\n        \"id\": \"30\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 12\n    },\n    {\n      \"factor\": {\n        \"id\": \"31\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 13\n    },\n    {\n      \"factor\": {\n        \"id\": \"32\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 14\n    },\n    {\n      \"factor\": {\n        \"id\": \"33\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 15\n    },\n    {\n      \"factor\": {\n        \"id\": \"34\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 16\n    },\n    {\n      \"factor\": {\n        \"id\": \"35\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 17\n    },\n    {\n      \"factor\": {\n        \"id\": \"36\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 18\n    },\n    {\n      \"factor\": {\n        \"id\": \"37\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 19\n    },\n    {\n      \"factor\": {\n        \"id\": \"38\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 20\n    },\n    {\n      \"factor\": {\n        \"id\": \"39\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 21\n    },\n    {\n      \"factor\": {\n        \"id\": \"40\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 22\n    },\n    {\n      \"factor\": {\n        \"id\": \"59\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        },\n        \"imageScope\": {\n          \"EQ\": \"Closeup\"\n        }\n      },\n      \"order\": 23\n    },\n    {\n      \"factor\": {\n        \"id\": \"42\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 24\n    },\n    {\n      \"factor\": {\n        \"id\": \"44\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 25\n    },\n    {\n      \"factor\": {\n        \"id\": \"45\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 26\n    },\n    {\n      \"factor\": {\n        \"id\": \"46\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 27\n    },\n    {\n      \"factor\": {\n        \"id\": \"60\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 28\n    },\n    {\n      \"factor\": {\n        \"id\": \"3\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 29\n    },\n    {\n      \"factor\": {\n        \"id\": \"48\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      },\n      \"order\": 30\n    }\n  ],\n  \"createdBy\": {\n    \"id\": \"618224d900a4f2e6b96aa901\"\n  },\n  \"createdAt\": \"2024-04-02T10:30:38.725535Z\",\n  \"updatedBy\": {\n    \"id\": \"618224d900a4f2e6b96aa901\"\n  },\n  \"updatedAt\": \"2024-04-08T06:37:02.408268Z\",\n  \"version\": \"1712558222408268288\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/factorgroup/4",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"factorgroup",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create changeset Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "293ade6b-0197-407c-9742-9c0ed2b1ee10"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "887df5c3-28eb-4c9d-a020-c8a0d666d9cc"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n  \"factor\": [\n    {\n      \"name\": \"Main Dwelling Elevation Image\",\n      \"key\": \"MAIN_DWELLING_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Main Dwelling\"\n      }\n    },\n    {\n      \"name\": \"Detached Garage Elevation Image\",\n      \"key\": \"DETACHED_GARAGE_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Detached Garage\"\n      }\n    },\n    {\n      \"name\": \"Built-in Garage Elevation Image\",\n      \"key\": \"BUILT_IN_GARAGE_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Built-in Garage\"\n      }\n    },\n    {\n      \"name\": \"Breezeway Attached Garage Elevation Image\",\n      \"key\": \"BREEZEWAY_ATTACHED_GARAGE_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Breezeway Attached Garage\"\n      }\n    },\n    {\n      \"name\": \"Carport Elevation Image\",\n      \"key\": \"CARPORT_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Carport\"\n      }\n    },\n    {\n      \"name\": \"Guest House Elevation Image\",\n      \"key\": \"GUEST_HOUSE_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Guest House\"\n      }\n    },\n    {\n      \"name\": \"Pool House Elevation Image\",\n      \"key\": \"POOL_HOUSE_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Pool House\"\n      }\n    },\n    {\n      \"name\": \"Storage Shed Elevation Image\",\n      \"key\": \"STORAGE_SHED_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Storage Shed\"\n      }\n    },\n    {\n      \"name\": \"Machine Shed Elevation Image\",\n      \"key\": \"MACHINE_SHED_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Machine Shed\"\n      }\n    },\n    {\n      \"name\": \"Barn Elevation Image\",\n      \"key\": \"BARN_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Barn\"\n      }\n    },\n    {\n      \"name\": \"Silo Elevation Image\",\n      \"key\": \"SILO_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Silo\"\n      }\n    },\n    {\n      \"name\": \"Chicken Coop Elevation Image\",\n      \"key\": \"CHICKEN_COOP_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Chicken Coop\"\n      }\n    },\n    {\n      \"name\": \"Stable Elevation Image\",\n      \"key\": \"STABLE_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Stable\"\n      }\n    },\n    {\n      \"name\": \"Goat Shed Elevation Image\",\n      \"key\": \"GOAT_SHED_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Goat Shed\"\n      }\n    },\n    {\n      \"name\": \"Gazebo Image\",\n      \"key\": \"GAZEBO_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Gazebo\"\n      }\n    },\n    {\n      \"name\": \"Pergola Image\",\n      \"key\": \"PERGOLA_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Pergola\"\n      }\n    },\n    {\n      \"name\": \"Pavilion Image\",\n      \"key\": \"PAVILION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Pavilion\"\n      }\n    },\n    {\n      \"name\": \"Other Structure Elevation Image\",\n      \"key\": \"OTHER_STRUCTURE_ELEVATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Elevation\",\n        \"buildingType\": \"Other Structure\"\n      }\n    },\n    {\n      \"name\": \"Garage Image\",\n      \"key\": \"GARAGE_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Garage\"\n      }\n    },\n    {\n      \"name\": \"Attic Image\",\n      \"key\": \"ATTIC_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Attic\"\n      }\n    },\n    {\n      \"name\": \"Bedroom Image\",\n      \"key\": \"BEDROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Bedroom\"\n      }\n    },\n    {\n      \"name\": \"Bathroom Image\",\n      \"key\": \"BATHROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Bathroom\"\n      }\n    },\n    {\n      \"name\": \"Dining Room Image\",\n      \"key\": \"DINING_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Dining Room\"\n      }\n    },\n    {\n      \"name\": \"Breakfast Room Image\",\n      \"key\": \"BREAKFAST_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Breakfast Room\"\n      }\n    },\n    {\n      \"name\": \"Living Room Image\",\n      \"key\": \"LIVING_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Living Room\"\n      }\n    },\n    {\n      \"name\": \"Family Room Image\",\n      \"key\": \"FAMILY_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Family Room\"\n      }\n    },\n    {\n      \"name\": \"Office/Study Room Image\",\n      \"key\": \"OFFICE_OR_STUDY_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Office/Study Room\"\n      }\n    },\n    {\n      \"name\": \"Kitchen Image\",\n      \"key\": \"KITCHEN_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Kitchen\"\n      }\n    },\n    {\n      \"name\": \"Closet Image\",\n      \"key\": \"CLOSET_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Closet\"\n      }\n    },\n    {\n      \"name\": \"Laundry Room Image\",\n      \"key\": \"LAUNDRY_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Laundry Room\"\n      }\n    },\n    {\n      \"name\": \"Utility Room Image\",\n      \"key\": \"UTILITY_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Utility Room\"\n      }\n    },\n    {\n      \"name\": \"Fitness Room Image\",\n      \"key\": \"FITNESS_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Fitness Room\"\n      }\n    },\n    {\n      \"name\": \"Sunroom Image\",\n      \"key\": \"SUNROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Sunroom\"\n      }\n    },\n    {\n      \"name\": \"Elevator Room Image\",\n      \"key\": \"ELEVATOR_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Elevator Room\"\n      }\n    },\n    {\n      \"name\": \"Media Room Image\",\n      \"key\": \"MEDIA_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Media Room\"\n      }\n    },\n    {\n      \"name\": \"Other Room Image\",\n      \"key\": \"OTHER_ROOM_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"roomType\": \"Other Room\"\n      }\n    },\n    {\n      \"name\": \"Ceiling Image\",\n      \"key\": \"CEILING_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"contentType\": \"Ceiling\"\n      }\n    },\n    {\n      \"name\": \"Wall Image\",\n      \"key\": \"WALL_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"contentType\": \"Wall\"\n      }\n    },\n    {\n      \"name\": \"Floor Image\",\n      \"key\": \"FLOOR_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"imageCategory\": \"Interior\",\n        \"contentType\": \"Floor\"\n      }\n    },\n    {\n      \"name\": \"Address Verification Image\",\n      \"key\": \"ADDRESS_VERIFICATION_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Address Verification\"\n      }\n    },\n    {\n      \"name\": \"Gated Community Image\",\n      \"key\": \"GATED_COMMUNITY_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Gated Community\"\n      }\n    },\n    {\n      \"name\": \"Swimming Pool Image\",\n      \"key\": \"SWIMMING_POOL_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Swimming Pool\"\n      }\n    },\n    {\n      \"name\": \"SPA Image\",\n      \"key\": \"SPA_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"SPA\"\n      }\n    },\n    {\n      \"name\": \"Jacuzzi Image\",\n      \"key\": \"JACUZZI_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Jacuzzi\"\n      }\n    },\n    {\n      \"name\": \"Tree House Image\",\n      \"key\": \"TREE_HOUSE_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Tree House\"\n      }\n    },\n    {\n      \"name\": \"Basketball Hoop Image\",\n      \"key\": \"BASKETBALL_HOOP_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Basketball Hoop\"\n      }\n    },\n    {\n      \"name\": \"Tennis Court Image\",\n      \"key\": \"TENNIS_COURT_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Tennis Court\"\n      }\n    },\n    {\n      \"name\": \"Putting Green Image\",\n      \"key\": \"PUTTING_GREEN_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Putting Green\"\n      }\n    },\n    {\n      \"name\": \"Trampoline Image\",\n      \"key\": \"TRAMPOLINE_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Trampoline\"\n      }\n    },\n    {\n      \"name\": \"Play/Swing Set Image\",\n      \"key\": \"PLAY_OR_SWING_SET_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Play/Swing Set\"\n      }\n    },\n    {\n      \"name\": \"Skateboard/Bike Ramp Image\",\n      \"key\": \"SKATEBOARD_OR_BIKE_RAMP_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Skateboard/Bike Ramp\"\n      }\n    },\n    {\n      \"name\": \"Pond Image\",\n      \"key\": \"POND_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Pond\"\n      }\n    },\n    {\n      \"name\": \"Water Feature Image\",\n      \"key\": \"WATER_FEATURE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Water Feature\"\n      }\n    },\n    {\n      \"name\": \"Bridge Image\",\n      \"key\": \"BRIDGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Bridge\"\n      }\n    },\n    {\n      \"name\": \"Patio Image\",\n      \"key\": \"PATIO_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Patio\"\n      }\n    },\n    {\n      \"name\": \"Porch Image\",\n      \"key\": \"PORCH_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Porch\"\n      }\n    },\n    {\n      \"name\": \"Garden Bed Image\",\n      \"key\": \"GARDEN_BED_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Garden Bed\"\n      }\n    },\n    {\n      \"name\": \"Arbor Image\",\n      \"key\": \"ARBOR_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Arbor\"\n      }\n    },\n    {\n      \"name\": \"Tree Image\",\n      \"key\": \"TREE_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Tree\"\n      }\n    },\n    {\n      \"name\": \"Hammock Image\",\n      \"key\": \"HAMMOCK\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Hammock\"\n      }\n    },\n    {\n      \"name\": \"Outdoor Kitchen Image\",\n      \"key\": \"OUTDOOR_KITCHEN_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Outdoor Kitchen\"\n      }\n    },\n    {\n      \"name\": \"Fire Pit Image\",\n      \"key\": \"FIRE_PIT_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Fire Pit\"\n      }\n    },\n    {\n      \"name\": \"Well Image\",\n      \"key\": \"WELL_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Well\"\n      }\n    },\n    {\n      \"name\": \"Fence Image\",\n      \"key\": \"FENCE_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Fence\"\n      }\n    },\n    {\n      \"name\": \"Storage Bin Image\",\n      \"key\": \"STORAGE_BIN_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Storage Bin\"\n      }\n    },\n    {\n      \"name\": \"Container Image\",\n      \"key\": \"CONTAINER_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Container\"\n      }\n    },\n    {\n      \"name\": \"Propane Tank Image\",\n      \"key\": \"PROPANE_TANK_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Propane Tank\"\n      }\n    },\n    {\n      \"name\": \"Pressure Tank Image\",\n      \"key\": \"PRESSURE_TANK_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Pressure Tank\"\n      }\n    },\n    {\n      \"name\": \"Oil Tank Image\",\n      \"key\": \"OIL_TANK_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Oil Tank\"\n      }\n    },\n    {\n      \"name\": \"Elevated Deck Image\",\n      \"key\": \"ELEVATED_DECK_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Elevated Deck\"\n      }\n    },\n    {\n      \"name\": \"Car Image\",\n      \"key\": \"CAR_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Car\"\n      }\n    },\n    {\n      \"name\": \"Trailer Image\",\n      \"key\": \"TRAILER_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Trailer\"\n      }\n    },\n    {\n      \"name\": \"Touring Car Image\",\n      \"key\": \"TOURING_CAR_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Touring Car\"\n      }\n    },\n    {\n      \"name\": \"ATV Image\",\n      \"key\": \"ATV_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"ATV\"\n      }\n    },\n    {\n      \"name\": \"Dirt Bike Image\",\n      \"key\": \"DIRT_BIKE_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Dirt Bike\"\n      }\n    },\n    {\n      \"name\": \"Debris Image\",\n      \"key\": \"DEBRIS_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Debris\"\n      }\n    },\n    {\n      \"name\": \"Dock Image\",\n      \"key\": \"DOCK_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Dock\"\n      }\n    },\n    {\n      \"name\": \"Boat Image\",\n      \"key\": \"BOAT_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Boat\"\n      }\n    },\n    {\n      \"name\": \"Yacht Image\",\n      \"key\": \"YACHT_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Yacht\"\n      }\n    },\n    {\n      \"name\": \"Boat Lift Image\",\n      \"key\": \"BOAT_LIFT_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Boat Lift\"\n      }\n    },\n    {\n      \"name\": \"Train Image\",\n      \"key\": \"TRAIN_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Train\"\n      }\n    },\n    {\n      \"name\": \"Out Door Furniture Image\",\n      \"key\": \"OUT_DOOR_FURNITURE_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Out Door Furniture\"\n      }\n    },\n    {\n      \"name\": \"BBQ Grill Image\",\n      \"key\": \"BBQ_GRILL_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"BBQ Grill\"\n      }\n    },\n    {\n      \"name\": \"Pet Image\",\n      \"key\": \"PET_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Pet\"\n      }\n    },\n    {\n      \"name\": \"Dog House Image\",\n      \"key\": \"DOG_HOUSE_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Dog House\"\n      }\n    },\n    {\n      \"name\": \"Dog Sign Image\",\n      \"key\": \"DOG_SIGN_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Dog Sign\"\n      }\n    },\n    {\n      \"name\": \"Satellite Dish Image\",\n      \"key\": \"SATELLITE_DISH_IMAGE\",\n      \"dataType\": \"IMAGE\",\n      \"attribute\": {\n        \"contentType\": \"Satellite Dish\"\n      }\n    },\n    {\n      \"name\": \"PIR JSON\",\n      \"key\": \"PIR_JSON\",\n      \"dataType\": \"JSON\",\n      \"attribute\": {}\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/changeset/2/factor",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"changeset",
+						"2",
+						"factor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get changeset",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "7233d8a3-5314-416c-9f6c-812bc82b5e69"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "299482d6-5b4d-4804-8317-31037f9f699a"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/changeset/418",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"changeset",
+						"418"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get factor",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "d7a8cb0f-2013-4d31-af7f-51f10e6c5913"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "16123dea-2bcd-449f-91e4-62272ebd0a73"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/factor/1",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"factor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get lambda",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "27999aca-7f89-44d2-9446-a1c61e6e58df"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "791bd597-c4ad-4e20-b2c0-bb0fea3c5983"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/lambda",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"lambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get lambda Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "d3985f86-9945-47fa-ad08-e54899323caa"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "1c0bee7a-3eba-4b17-aa9b-de40ac0e4469"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/lambda/status?runId=143",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"lambda",
+						"status"
+					],
+					"query": [
+						{
+							"key": "runId",
+							"value": "143"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update factor lambda",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "28d088ff-3e41-44ac-a540-08a2c5e69f4b"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "f3e9a7d9-b4a9-485c-bdc1-38de85c4c288"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/factor/1/lambda?disabledLambdaIds=1,2",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"factor",
+						"1",
+						"lambda"
+					],
+					"query": [
+						{
+							"key": "disabledLambdaIds",
+							"value": "1,2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create fator group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "9e72d350-5ef1-4a73-a4fb-b7ff95224093"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "07f1c7e7-0021-4489-ac07-8c4f2d3e0cb5"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"key\": \"PIR\",\n  \"name\": \"pir\",\n  \"attribute\": {\n    \"reportType\": \"PIR\"\n  },\n  \"factor\": [\n    {\n      \"factor\": {\n        \"key\": \"SIDING_MATERIAL\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"NUMBER_OF_STORIES\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"MAIN_DWELLING_ELEVATION_OVERVIEW_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"OUTBUILDING_ELEVATION_OVERVIEW_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"ELEVATION_COMPONENT_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"ROOM_OVERVIEW_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"ENTRANCE_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"CEILING_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"WALL_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"FLOOR_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"ADDRESS_VERIFICATION_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"GATED_COMMUNITY_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"FENCE_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"OUTDOOR_COMPONENT_IMAGE\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    },\n    {\n      \"factor\": {\n        \"key\": \"PIR_REPORT_SOURCE_JSON\"\n      },\n      \"filter\": {\n        \"projectId\": {\n          \"EQ\": \"{{projectId}}\"\n        },\n        \"addressId\": {\n          \"EQ\": \"{{addressId}}\"\n        }\n      }\n    }\n  ]\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/factorgroup",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"factorgroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create fator group Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "868c5f4d-a92e-4c9a-b2cb-6cb0f33cb2e1"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "ef30873a-86c3-4560-bd4a-c4953cedc5d7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"factor\": [\n        {\"factorId\": \"100\"}, {\"factorId\": \"101\"}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/factorgroup/1",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"factorgroup",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create fator group Copy 2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "184e076b-afae-4c77-b834-b7ddb89656de"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "f357d0e9-2d1b-4c19-96a3-32b30e248235"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lambda\": [\n        {\n            \"name\": \"Autofill Main Dwelling Image By Tag\",\n            \"key\": \"AUTOFILL_MAIN_DWELLING_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getMainDwellingElevation\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"96\"\n                },\n                {\n                    \"id\": \"116\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Detached Garage Image By Tag\",\n            \"key\": \"AUTOFILL_DETACHED_GARAGE_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"97\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Built-in Garage Image By Tag\",\n            \"key\": \"AUTOFILL_BUILT_IN_GARAGE_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"98\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Breezeway Attached Garage Image By Tag\",\n            \"key\": \"AUTOFILL_BREEZEWAY_ATTACHED_GARAGE_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"99\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Carport Image By Tag\",\n            \"key\": \"AUTOFILL_CARPORT_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"100\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Guest House Image By Tag\",\n            \"key\": \"AUTOFILL_GUEST_HOUSE_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"101\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Pool House Image By Tag\",\n            \"key\": \"AUTOFILL_POOL_HOUSE_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"102\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Storage Shed Image By Tag\",\n            \"key\": \"AUTOFILL_STORAGE_SHED_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"103\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Machine Shed Image By Tag\",\n            \"key\": \"AUTOFILL_MACHINE_SHED_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"104\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Barn Image By Tag\",\n            \"key\": \"AUTOFILL_BARN_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"105\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Silo Image By Tag\",\n            \"key\": \"AUTOFILL_SILO_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"106\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Dog Kennel Image By Tag\",\n            \"key\": \"AUTOFILL_DOG_KENNEL_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"107\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Chicken Coop Image By Tag\",\n            \"key\": \"AUTOFILL_CHICKEN_COOP_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"108\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Stable Image By Tag\",\n            \"key\": \"AUTOFILL_STABLE_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"109\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Goat Shed Image By Tag\",\n            \"key\": \"AUTOFILL_GOAT_SHED_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"110\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Gazebo Image By Tag\",\n            \"key\": \"AUTOFILL_GAZEBO_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"111\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Pergola Image By Tag\",\n            \"key\": \"AUTOFILL_PERGOLA_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"112\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Pavilion Image By Tag\",\n            \"key\": \"AUTOFILL_PAVILION_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"113\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Garden House Image By Tag\",\n            \"key\": \"AUTOFILL_GARDEN_HOUSE_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"114\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Other Structure Image By Tag\",\n            \"key\": \"AUTOFILL_OTHER_STRUCTURE_ELEVATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"115\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Garage Interior Image By Tag\",\n            \"key\": \"AUTOFILL_GARAGE_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"117\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Attic Image By Tag\",\n            \"key\": \"AUTOFILL_ATTIC_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"118\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Bedroom Image By Tag\",\n            \"key\": \"AUTOFILL_BEDROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"119\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Bathroom Image By Tag\",\n            \"key\": \"AUTOFILL_BATHROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"120\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Dining Room Image By Tag\",\n            \"key\": \"AUTOFILL_DINING_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"121\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Breakfast Room Image By Tag\",\n            \"key\": \"AUTOFILL_BREAKFAST_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"122\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Living Room Image By Tag\",\n            \"key\": \"AUTOFILL_LIVING_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"123\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Family Room Image By Tag\",\n            \"key\": \"AUTOFILL_FAMILY_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"124\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Office/Study Room Image By Tag\",\n            \"key\": \"AUTOFILL_OFFICE_OR_STUDY_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"125\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Kitchen Image By Tag\",\n            \"key\": \"AUTOFILL_KITCHEN_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"126\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Closet Image By Tag\",\n            \"key\": \"AUTOFILL_CLOSET_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"127\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Laundry Room Image By Tag\",\n            \"key\": \"AUTOFILL_LAUNDRY_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"128\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Utility Room Image By Tag\",\n            \"key\": \"AUTOFILL_UTILITY_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"129\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Fitness Room Image By Tag\",\n            \"key\": \"AUTOFILL_FITNESS_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"130\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Sunroom Image By Tag\",\n            \"key\": \"AUTOFILL_SUNROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"131\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Elevator Room Image By Tag\",\n            \"key\": \"AUTOFILL_ELEVATOR_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"132\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Media Room Image By Tag\",\n            \"key\": \"AUTOFILL_MEDIA_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"133\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Other Room Image By Tag\",\n            \"key\": \"AUTOFILL_OTHER_ROOM_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"134\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Ceiling Image By Tag\",\n            \"key\": \"AUTOFILL_CEILING_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"135\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Wall Image By Tag\",\n            \"key\": \"AUTOFILL_WALL_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"136\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Floor Image By Tag\",\n            \"key\": \"AUTOFILL_FLOOR_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"137\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Address Verification Image By Tag\",\n            \"key\": \"AUTOFILL_ADDRESS_VERIFICATION_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"138\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Gated Community Image By Tag\",\n            \"key\": \"AUTOFILL_GATED_COMMUNITY_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"139\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Fence Image By Tag\",\n            \"key\": \"AUTOFILL_FENCE_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getImageByTag\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"140\"\n                }\n            ]\n        },\n        {\n            \"name\": \"Autofill Outdoor Component Image By Tag\",\n            \"key\": \"AUTOFILL_OUTDOOR_COMPONENT_IMAGE_BY_TAG\",\n            \"arguments\": [],\n            \"filePath\": \"getOutdoorComponentImage\",\n            \"outputFactor\": [\n                {\n                    \"id\": \"141\"\n                }\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/changeset/4/lambda",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"changeset",
+						"4",
+						"lambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "execute changeset",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "363745db-6a4a-45a4-910d-2f9a7cd74fb2"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "3d513ef6-fd99-45a7-90d3-7221af93fb0d"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/changeset/76/execution",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"changeset",
+						"76",
+						"execution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get factorgroup",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "ec329e67-c5cf-40ba-afbe-398624d96269"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "33c15d37-9cdc-49b4-84bf-65c1f892c896"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/factorgroup?key=PIR",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"factorgroup"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "PIR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get factorgroup Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "5d97b5cb-ac9e-43e1-8643-01e43e8d8840"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "45a0988e-19c4-44cc-80ec-deaa09e703b8"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/factorgroup?key=PIR",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"factorgroup"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "PIR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "release changeset",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "854c6a10-69a1-4991-8e4a-ccaca39a9af0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"uuid": "d7b8d3ee-0cbe-429e-9054-68ca0fd97550"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lambdaId\": \"73\",\n    \"params\": {\n        \"projectId\": \"3627\",\n        \"addressId\": \"2176\"\n    },\n    \"environment\": {\n        \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiMTA2MiIsInBob3RvIjoiaHR0cHM6Ly9maWxlcy5hdXRoaW5nLmNvL2F1dGhpbmctY29uc29sZS9kZWZhdWx0LXVzZXItYXZhdGFyLnBuZyIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iXSwiY2xpZW50X2lkIjoiYmVlczM2MC1haSIsInBob25lIjoiIiwic2NvcGUiOiJiZWVzMzYwLmFpIiwibmFtZSI6IkUyRS10ZXN0ICIsImlkIjoiNjU4MmJiYzBlOTdiOGZhMTFkNzk2MDNmIiwiZXhwIjoxNzE0MDg2MTUwLCJlbWFpbCI6InRlc3QuYWNjb3VudEBiZWVzMzYwLmNvbSIsImp0aSI6IjIwZDhmMGExLTQxNTUtNDBlMS1iODcwLTQ0MTBhNTcyMmEyMyIsInVzZXJuYW1lIjoidGVzdC5hY2NvdW50QGJlZXMzNjAuY29tIn0.KbHlGGQxEtkeWsI14vlGuvK_ZRnZIEDYjOn6tVM_loSYuzU0_p_q86qysgA5XEzMJ_K7qpA0uRmzG2-3rTth0F9FvfFyznD5890S86POyQI9i_H_5MGJBWvZ6ruz-MjSEZueHybz8QwzQ6GBJCsPYPw6_rIa_VE16dXr1R24phJNYr_HyOCL2miDuVHoTrqP-GqJ8AZ-P4IcuK8JMOo-NfFJynufW7czRfdlM7PPDGgkkt4N2W_vZBta76h0KuSQfjhVJkqmBhrMN5eAcfIFgCCDcLHo8sbi-I19UMyyZVt3be6foRK1pO1lBviosJRwV-0__umYuktfDinD4ToG9Q\",\n        \"domain\": \"https://qa-ai.9realms.co\"\n    },\n    \"comment\": \"HTTP Test Excution.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/changeset/335/execution",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"changeset",
+						"335",
+						"execution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get factor value",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "172dbc1c-5b3d-4921-9b3d-41cdff60c607"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "03af746a-bda1-43dc-974c-ec2e664b7d08"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"uuid": "39932361-d8dc-4178-a937-134ee2550a02"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"uuid": "6a00bc2c-6a27-4e1e-8df5-a422b1195278"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:3000",
+						"uuid": "b7efe2fa-0ade-46c3-baea-4b53e088d9e4"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:3000/",
+						"uuid": "f2229449-9f8f-492a-87cf-6551a8d69030"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+						"uuid": "2d37a0ec-cbdc-4ad2-a52b-8c8eb5533bfe"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"addressId\": \"49\", \"projectId\": \"88\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/value?valueIds=77706,77594",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"value"
+					],
+					"query": [
+						{
+							"key": "valueIds",
+							"value": "77706,77594"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get factor value by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "99307124-90b6-4bdc-bbf4-dd87aa25dfe1"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "a022cb53-7b67-4221-8e3c-885e7c4075fc"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"uuid": "2dbed165-3697-4cec-9aa2-74af2cc06f24"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"uuid": "f727d9d6-b9eb-4372-8a50-498f5295e431"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:3000",
+						"uuid": "24ec24ea-04c2-42f5-bb80-fdd7f4f7dcc6"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:3000/",
+						"uuid": "5eaaef31-97e6-41d8-b080-b9007697d5b0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+						"uuid": "48f68d26-9354-4de9-a29f-892b99079e52"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    [\n        31488,\n        \"11000000000000f03f\",\n        {\n            \"addressId\": \"49\",\n            \"projectId\": \"88\",\n            \"buildingType\": \"Main Dwelling\",\n            \"buildingDirection\": \"Front\"\n        },\n        42,\n        \"1eef5a64-bad0-63e8-842d-d53543392618\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-08T12:48:27.808627+00:00\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-08T12:48:27.808627+00:00\",\n        false,\n        {\n            \"id\": 42,\n            \"key\": \"NUMBER_OF_HAIL_DAMAGE\",\n            \"name\": \"Hail Hit per Square\",\n            \"version\": 0,\n            \"attribute\": {},\n            \"data_type\": \"INT32\",\n            \"created_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"created_by\": \"618224d900a4f2e6b96aa901\",\n            \"updated_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"factor_name_id\": 43\n        }\n    ],\n    [\n        31489,\n        \"110000000000000000\",\n        {\n            \"addressId\": \"49\",\n            \"projectId\": \"88\",\n            \"buildingType\": \"Main Dwelling\",\n            \"buildingDirection\": \"Right\"\n        },\n        42,\n        \"1eef5a64-bad0-63e8-842d-d53543392618\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-08T12:48:27.808627+00:00\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-08T12:48:27.808627+00:00\",\n        false,\n        {\n            \"id\": 42,\n            \"key\": \"NUMBER_OF_HAIL_DAMAGE\",\n            \"name\": \"Hail Hit per Square\",\n            \"version\": 0,\n            \"attribute\": {},\n            \"data_type\": \"INT32\",\n            \"created_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"created_by\": \"618224d900a4f2e6b96aa901\",\n            \"updated_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"factor_name_id\": 43\n        }\n    ],\n    [\n        31490,\n        \"11000000000000f03f\",\n        {\n            \"addressId\": \"49\",\n            \"projectId\": \"88\",\n            \"buildingType\": \"Main Dwelling\",\n            \"buildingDirection\": \"Rear\"\n        },\n        42,\n        \"1eef5a64-bad0-63e8-842d-d53543392618\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-08T12:48:27.808627+00:00\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-08T12:48:27.808627+00:00\",\n        false,\n        {\n            \"id\": 42,\n            \"key\": \"NUMBER_OF_HAIL_DAMAGE\",\n            \"name\": \"Hail Hit per Square\",\n            \"version\": 0,\n            \"attribute\": {},\n            \"data_type\": \"INT32\",\n            \"created_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"created_by\": \"618224d900a4f2e6b96aa901\",\n            \"updated_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"factor_name_id\": 43\n        }\n    ],\n    [\n        31491,\n        \"110000000000000000\",\n        {\n            \"addressId\": \"49\",\n            \"projectId\": \"88\",\n            \"buildingType\": \"Main Dwelling\",\n            \"buildingDirection\": \"Left\"\n        },\n        42,\n        \"1eef5a64-bad0-63e8-842d-d53543392618\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-08T12:48:27.808627+00:00\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-08T12:48:27.808627+00:00\",\n        false,\n        {\n            \"id\": 42,\n            \"key\": \"NUMBER_OF_HAIL_DAMAGE\",\n            \"name\": \"Hail Hit per Square\",\n            \"version\": 0,\n            \"attribute\": {},\n            \"data_type\": \"INT32\",\n            \"created_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"created_by\": \"618224d900a4f2e6b96aa901\",\n            \"updated_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"factor_name_id\": 43\n        }\n    ],\n    [\n        31598,\n        \"11000000000000f03f\",\n        {\n            \"addressId\": \"49\",\n            \"projectId\": \"88\",\n            \"buildingType\": \"Main Dwelling\",\n            \"buildingDirection\": \"Front\"\n        },\n        42,\n        \"1eef6291-9cea-6862-842d-f5ef924af3ca\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-09T04:24:48.215022+00:00\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-09T04:24:48.215022+00:00\",\n        false,\n        {\n            \"id\": 42,\n            \"key\": \"NUMBER_OF_HAIL_DAMAGE\",\n            \"name\": \"Hail Hit per Square\",\n            \"version\": 0,\n            \"attribute\": {},\n            \"data_type\": \"INT32\",\n            \"created_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"created_by\": \"618224d900a4f2e6b96aa901\",\n            \"updated_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"factor_name_id\": 43\n        }\n    ],\n    [\n        31599,\n        \"110000000000000000\",\n        {\n            \"addressId\": \"49\",\n            \"projectId\": \"88\",\n            \"buildingType\": \"Main Dwelling\",\n            \"buildingDirection\": \"Right\"\n        },\n        42,\n        \"1eef6291-9cea-6862-842d-f5ef924af3ca\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-09T04:24:48.215022+00:00\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-09T04:24:48.215022+00:00\",\n        false,\n        {\n            \"id\": 42,\n            \"key\": \"NUMBER_OF_HAIL_DAMAGE\",\n            \"name\": \"Hail Hit per Square\",\n            \"version\": 0,\n            \"attribute\": {},\n            \"data_type\": \"INT32\",\n            \"created_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"created_by\": \"618224d900a4f2e6b96aa901\",\n            \"updated_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"factor_name_id\": 43\n        }\n    ],\n    [\n        31600,\n        \"11000000000000f03f\",\n        {\n            \"addressId\": \"49\",\n            \"projectId\": \"88\",\n            \"buildingType\": \"Main Dwelling\",\n            \"buildingDirection\": \"Rear\"\n        },\n        42,\n        \"1eef6291-9cea-6862-842d-f5ef924af3ca\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-09T04:24:48.215022+00:00\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-09T04:24:48.215022+00:00\",\n        false,\n        {\n            \"id\": 42,\n            \"key\": \"NUMBER_OF_HAIL_DAMAGE\",\n            \"name\": \"Hail Hit per Square\",\n            \"version\": 0,\n            \"attribute\": {},\n            \"data_type\": \"INT32\",\n            \"created_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"created_by\": \"618224d900a4f2e6b96aa901\",\n            \"updated_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"factor_name_id\": 43\n        }\n    ],\n    [\n        31601,\n        \"110000000000000000\",\n        {\n            \"addressId\": \"49\",\n            \"projectId\": \"88\",\n            \"buildingType\": \"Main Dwelling\",\n            \"buildingDirection\": \"Left\"\n        },\n        42,\n        \"1eef6291-9cea-6862-842d-f5ef924af3ca\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-09T04:24:48.215022+00:00\",\n        \"618224d900a4f2e6b96aa901\",\n        \"2024-04-09T04:24:48.215022+00:00\",\n        false,\n        {\n            \"id\": 42,\n            \"key\": \"NUMBER_OF_HAIL_DAMAGE\",\n            \"name\": \"Hail Hit per Square\",\n            \"version\": 0,\n            \"attribute\": {},\n            \"data_type\": \"INT32\",\n            \"created_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"created_by\": \"618224d900a4f2e6b96aa901\",\n            \"updated_at\": \"2024-04-02T10:17:54.495759+00:00\",\n            \"factor_name_id\": 43\n        }\n    ]\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/value/31653",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"value",
+						"31653"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"environment\": { \"projectId\": \"88\" }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/lamdba/1/execution",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"lamdba",
+						"1",
+						"execution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post value",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-ai.9realms.co",
+						"uuid": "ac19a429-dccc-493f-964a-327331965e28"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "d83169a8-3c7b-40cd-a834-b37ff5dd3369"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "fd0047c2-887c-4793-899c-8564ad91ac43"
+					},
+					{
+						"key": "authorization",
+						"value": "{{Authorization}}",
+						"uuid": "f3e51ce1-9a29-4572-9bbf-9a31dff80493"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8",
+						"uuid": "2b550f2e-139a-4cdd-8003-5b50358bec9e"
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3000",
+						"uuid": "b5200ee7-56d7-4cda-8526-6085ac077837"
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"uuid": "d0c76d0d-769d-485a-96f4-1056d2aa06a8"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+						"uuid": "703a6419-9b54-46d1-ac9d-7f458b3ae9c6"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "7d7cc157-de83-4693-8515-1ef433a7be4b"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"uuid": "961d3380-861a-4fad-b9f1-b99a76628198"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "0715efd3-0027-4d51-ac8a-de7c8a131a64"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "37522932-2479-4d59-80c4-488b491a56f6"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site",
+						"uuid": "dd566838-02c6-4b9c-b2ce-b82b5d272e9b"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+						"uuid": "6c71e145-6376-4fee-857e-defbe6a42309"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"factorValue\": [\n        {\n            \"factor\": {\n                \"id\": \"1\"\n            },\n            \"data\": \"Xw9qaLrCjVtkknHy6rbOZ_u4nDmjyfrj\",\n            \"attribute\": {\n                \"buildingDirection\": \"front\",\n                \"imageScope\": \"overview\",\n                \"projectId\": \"160\"\n            }\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/value",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"value"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create value",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-ai.9realms.co",
+						"uuid": "4d81f9b8-aea0-49cd-9ae7-02a6b1d16cec"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "6f8e21e4-3e42-4836-8947-019aa7e7948e"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+						"uuid": "98deb78d-f08c-45a5-af8e-ad70b36199b0"
+					},
+					{
+						"key": "authorization",
+						"value": "{{Authorization}}",
+						"uuid": "b52b6816-2a50-4158-8c1b-b680dabc214b"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8",
+						"uuid": "ed35cca4-8b51-459e-80a7-dd033e599413"
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3000",
+						"uuid": "6877da7f-0538-4ebb-8103-2b3e29557e76"
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"uuid": "dad979fe-f1b1-4500-aed0-5c1191957f92"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+						"uuid": "ff5ce948-98d6-4f8c-9e83-2b5c512fbb18"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "a091d255-6ccf-457f-ab6e-af3a072cf8f8"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"uuid": "579f2371-e435-4d4c-b499-9c83056e6497"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "f9e0d36d-d0f8-4a27-af5c-cb8729ac9cd5"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "ce80cc56-c3a5-4953-bfdb-9805921e83b4"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site",
+						"uuid": "a365e131-f8f6-459b-b980-ea236af912f0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+						"uuid": "e2e911bf-af0c-40e4-b348-6afc23702982"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"factorValue\": [\n        {\n            \"factor\": {\n                \"id\": \"35\"\n            },\n            \"data\": [1.0,2.0],\n            \"attribute\": {\n                \"projectId\": \"88\"\n            }\n        },{\n            \"factor\": {\n                \"id\": \"35\"\n            },\n            \"data\": [1.0,2.0],\n            \"attribute\": {\n                \"projectId\": \"888\"\n            }\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/value",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"value"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update value attribute",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-ai.9realms.co",
+						"uuid": "49677de0-da93-4722-ad8f-83cc3305abf1"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "a56aabe5-2ff2-4d43-b8a8-cd7a37f82f8c"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+						"uuid": "ab19b6d6-bc8f-410c-9e43-5b2c398eeaaf"
+					},
+					{
+						"key": "authorization",
+						"value": "{{Authorization}}",
+						"uuid": "f930ce53-7ee6-4249-abad-935bbca9a696"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8",
+						"uuid": "616cb58b-733c-40f7-83fa-3bf6eb53a3ae"
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3000",
+						"uuid": "3b576f14-be23-4a20-8f90-31e19f405a7e"
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"uuid": "a4777261-2953-4ec7-8033-89652447e6b4"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+						"uuid": "1ada9774-1496-4b41-947e-046cf7a7f2a6"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "78ccbdd1-aaaf-4145-ae49-90d489ae0f1a"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"uuid": "117db37c-add6-44e3-b7d0-c550aa052a5f"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "b0a1cff2-ede5-401f-ade8-e8e3709f655d"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "8488c9c3-7afe-43fe-b843-3873c1d7d37d"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site",
+						"uuid": "a137e596-f5f1-4f48-ac67-f4e57310de09"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+						"uuid": "2c9ca0ae-1cd4-4a2e-87d1-aaf3825686ee"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"attribute\": {\n        \"addressId\": \"49\",\n        \"buildingDirection\": \"Right\",\n        \"projectId\": \"88\"\n    }\n}"
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/value/109",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"value",
+						"109"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update value attribute",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-ai.9realms.co",
+						"uuid": "dccf4c41-d083-4b34-ae8f-d580a2f8bcee"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "fc8ec93e-ee69-4082-9f45-05596df77aef"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "c2604702-e02e-4f7e-b780-f0d600f2c566"
+					},
+					{
+						"key": "authorization",
+						"value": "{{Authorization}}",
+						"uuid": "b698dbf1-e018-4c7e-8cc4-e33b0690e654"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache",
+						"uuid": "a40ccc2b-5ca7-4c97-b7e3-79e4bfbdc985"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8",
+						"uuid": "57ead32c-9b0d-4c92-b901-67dc730c3847"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga_NXY6JBL0TS=GS1.1.1706683517.5.0.1706683517.0.0.0",
+						"uuid": "13ff1778-7dba-4a3c-ba15-159f5bd3800a"
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3000",
+						"uuid": "8fbc46bd-5c57-49b5-986a-3cfa8507c687"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache",
+						"uuid": "6de21ecd-b34c-429a-8599-10b7bd437c66"
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"uuid": "dd490ac0-04b1-48f4-b56f-b1204d75c41c"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+						"uuid": "4f4355b1-b44b-4189-bc09-4f6144b2b63a"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "096d87d8-688d-4dd4-8d3f-8cba80ab535f"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"uuid": "00029dd3-dce8-455d-9876-f6134dfe0f3c"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "d24f92f9-ce70-43b2-a47a-1925da9831ef"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "f23be861-a949-4c36-96df-a31ccc652d5e"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site",
+						"uuid": "5190ffe3-6f10-481e-b2ee-d8faa590e349"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+						"uuid": "3665b863-24f6-452a-947a-e7b1f22f5cac"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"attribute\": {\n        \"damage\": \"test\"\n    }\n}"
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/value/3",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"value",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter group value",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-ai.9realms.co",
+						"uuid": "66f7a141-4b7a-42da-8650-02ce346c1df2"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "2dd61783-ca5e-4259-bbf9-943b284d7a8a"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "ca1e8c54-bfcc-4125-9b69-ac27dc10c29c"
+					},
+					{
+						"key": "authorization",
+						"value": "{{Authorization}}",
+						"uuid": "f0496814-317c-412d-ac54-05c8d6edcd84"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache",
+						"uuid": "97710617-07f8-469d-b8db-8e65aff61c77"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga_NXY6JBL0TS=GS1.1.1706683517.5.0.1706683517.0.0.0",
+						"uuid": "bef962ad-c65a-432a-8149-dcc4f56a4f49"
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3000",
+						"uuid": "070629cf-4b9a-4efd-aaaf-bfb972bc349f"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache",
+						"uuid": "058f969a-cbc6-49bb-a265-694cd8195995"
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"uuid": "1ec34be5-2c50-4e4c-a0bc-0b8a08afb6a0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+						"uuid": "4f05570b-9a43-45b9-8a5d-8cea3152ba4c"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "8e15766f-da5e-4f09-aa77-59017a6afed4"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"uuid": "26e14f15-aab1-4a0f-931e-26178d39ef8b"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "492f0513-92f5-42c5-969f-1b4319803fbb"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "7c7c292b-7e3e-43d1-9a6e-372fb273833e"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site",
+						"uuid": "55b18aea-7e75-4aff-a32d-47fc84f67b08"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+						"uuid": "895f8489-27c8-4dd1-84c3-e38899b59709"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/factorgroup/1/value?environment=%7B%22projectId%22:%223085%22,%22addressId%22:%222176%22%7D",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"factorgroup",
+						"1",
+						"value"
+					],
+					"query": [
+						{
+							"key": "environment",
+							"value": "%7B%22projectId%22:%223085%22,%22addressId%22:%222176%22%7D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-ai.9realms.co/apiv2/estintel/lambda/20/execution",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "9410ff78-b507-4dd0-8c34-a961881531d0"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "71ae8d8d-ee78-438a-831a-5d2e085fe63c"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiMjc3MCIsInBob3RvIjoiaHR0cHM6Ly93ZXdvcmsucXBpYy5jbi93d3BpYy81MjIzMDlfZFBkRk5mbE9SOGlGTEZKXzE2NjkwOTc0NzMvMCIsImF1dGhvcml0aWVzIjpbIlJPTEVfRklFTERfQ09PUkRJTkFUT1IiLCJST0xFX0FETUlOIiwiUk9MRV9QUk9DRVNTT1IiLCJST0xFX1BST0RVQ0VSIiwiUk9MRV9GSUVMRF9NQU5BR0VSIiwiUk9MRV9TQ0hFRFVMRVIiXSwiY2xpZW50X2lkIjoiYmVlczM2MC1haSIsInBob25lIjoiMTgxMzgyMzY1OTIiLCJzY29wZSI6ImJlZXMzNjAuYWkiLCJuYW1lIjoiSGVhbHRoeSIsImlkIjoiNjE4MjI0ZDkwMGE0ZjJlNmI5NmFhOTAxIiwiZXhwIjoxNzEyNzU2Njc4LCJlbWFpbCI6Ind1emhlbmthbmdAOXJlYWxtcy5jbyIsImp0aSI6IjRmNzY0MDE0LTA4NTMtNDdlNy05YmIyLTdkMWU5M2Q1NTJjNiIsInVzZXJuYW1lIjoid3V6aGVua2FuZ0A5cmVhbG1zLmNvIn0.b58azpmL_Vx_Ay1riAXIc6vj2tT_O4SYDuXkJRvnni9cR5FUpraoehGeWmL7F52VKFhKTbfTQ6Kt_imdLEJvqk7RZxBS72j-cfN_m8q2x65fyJR4jt8LrQYUc5Aoms2NCv8B6zLeollQzfe7h_45G77bKh-DJZ8eAK1l73HMEjIgtToauY25JLFPbN2MQSLLLMw3kyJCtmps0TUdYQSnRhLINsep39qNCzVDP-uaiUthhDyx0BB-AHSpynx0QEtjSCovL0cnx1w-JfSo9pPLi7dbKayBNhiBCRxYQwLhbOwgTT3u-6n-LnR0isee39Xp0bM3EYSazmpAONPzyb4Q7Q",
+						"uuid": "290bf9b2-e806-4575-a357-b2812fb722f8",
+						"disabled": true
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8",
+						"uuid": "ebe77e14-d9be-4728-9f2e-5e3a9cad17e4",
+						"disabled": true
+					},
+					{
+						"key": "cookie",
+						"value": "_ga_NXY6JBL0TS=GS1.1.1706868488.5.0.1706868488.0.0.0",
+						"uuid": "a77113c2-59a5-4fa8-97fe-8fbd536ad1ff",
+						"disabled": true
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3000",
+						"uuid": "92303199-f575-4ee2-984c-3ff953bafda8",
+						"disabled": true
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"uuid": "0faa85db-d8e8-4ec8-b72e-eb0af6adad5b",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+						"uuid": "41b13f94-a3f9-46fc-b320-7342c9db0447",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "585a5f4e-34b7-403a-a39c-6cb72f31abe0",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"uuid": "7dc7be2c-9850-416b-b6fc-943dbc74bccb",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "68efccbe-b823-484a-9cf9-d61206581dfe",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "345389c4-0793-4e63-bc6e-9a51cdc2b90a",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site",
+						"uuid": "fc95cf1b-f7d1-4747-a487-1f2983383c7e",
+						"disabled": true
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+						"uuid": "0469dbe8-abcc-4714-83a2-ec325b6d2d99",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "4f1364cb-9cfa-4d87-8061-195bdb6121d4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lambdaId\": \"67\",\n    \"argument\": [],\n    \"params\": {\n        \"projectId\": \"3216\",\n        \"addressId\": \"2176\"\n    },\n    \"environment\": {\n        \"imageOpenapi\":{\n            \"domain\": \"xxxxx\"\n        },\n        \"baseApi\": {\n            \"domain\": \"https://test.bees360.ai\",\n            \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiMTA2MiIsInBob3RvIjoiaHR0cHM6Ly9yZXNvdXJjZS50ZXN0LmJlZXMzNjAuY29tL3Jlc291cmNlL3VzZXIvYTM2ODg5NTQtY2VkMC00N2ZmLTg1ZWMtNTMxMjYyOTQ3MjAyL2F2YXRhciIsImF1dGhvcml0aWVzIjpbIlJPTEVfQkVFUzM2MCIsIlJPTEVfQURNSU4iXSwiY2xpZW50X2lkIjoiYmVlczM2MC1haSIsInBob25lIjoiOC42MkUrMTIiLCJzY29wZSI6ImJlZXMzNjAuYWkiLCJuYW1lIjoiWmhlbmthbmcgV3UiLCJpZCI6IkdTOjEwNDk3MTY4MTY1NTU0MDMyMDA4OSIsImV4cCI6MTcxMzUzODQ5NiwiZW1haWwiOiJ6aGVua2FuZy53dUBiZWVzMzYwLmNvbSIsImp0aSI6IjYzOTA3OTliLTc2NWYtNDgxZi1hMDYyLTZmMTI3ZWJlODk3MiIsInVzZXJuYW1lIjoiR1M6emhlbmthbmcud3VAYmVlczM2MC5jb20ifQ.K502LhVKSgLATSiVVoWvmpBttbTvSPZRPyRJrYPbKqWqAgo8J2mnKLTijecr3XU6-6g1vIygU9ylnnJcB4bjT0gcmXZrZhKgXFILczrjHSFN3ki3_u-px1VC2B0UyuJHX9YZr2f9L3DkU-ku2h_FN01NMHc1TDerRWobEfWhh3MHGIwbRKanOHohT22NQtOnqabsUhuyJfPKnvlVaXemCsjSV8FfcUem7LyovQcB8JX5VEIKaYghiaqvQiogq3hRH6E4vQsN_B9vtxYp3kLz-qdJu3hWhNW7uZWcHl8vdE3epqz0qIsGtTTtFQxlCiwia-gh_uiWQkMxAjfSS0Kr1Q\"\n        }\n    },\n    \"nonBlocking\": true,\n    \"comment\": \"Excute at 1713757649.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/lambda/67/execution",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"lambda",
+						"67",
+						"execution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-ai.9realms.co/apiv2/estintel/lambda/20/execution Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "91f4f209-4c8b-4eff-b903-31d9cef9c334"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "18860625-ab0d-47db-a12d-e398d523f3f0",
+						"disabled": true
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiMjc3MCIsInBob3RvIjoiaHR0cHM6Ly93ZXdvcmsucXBpYy5jbi93d3BpYy81MjIzMDlfZFBkRk5mbE9SOGlGTEZKXzE2NjkwOTc0NzMvMCIsImF1dGhvcml0aWVzIjpbIlJPTEVfRklFTERfQ09PUkRJTkFUT1IiLCJST0xFX0FETUlOIiwiUk9MRV9QUk9DRVNTT1IiLCJST0xFX1BST0RVQ0VSIiwiUk9MRV9GSUVMRF9NQU5BR0VSIiwiUk9MRV9TQ0hFRFVMRVIiXSwiY2xpZW50X2lkIjoiYmVlczM2MC1haSIsInBob25lIjoiMTgxMzgyMzY1OTIiLCJzY29wZSI6ImJlZXMzNjAuYWkiLCJuYW1lIjoiSGVhbHRoeSIsImlkIjoiNjE4MjI0ZDkwMGE0ZjJlNmI5NmFhOTAxIiwiZXhwIjoxNzEyNzU2Njc4LCJlbWFpbCI6Ind1emhlbmthbmdAOXJlYWxtcy5jbyIsImp0aSI6IjRmNzY0MDE0LTA4NTMtNDdlNy05YmIyLTdkMWU5M2Q1NTJjNiIsInVzZXJuYW1lIjoid3V6aGVua2FuZ0A5cmVhbG1zLmNvIn0.b58azpmL_Vx_Ay1riAXIc6vj2tT_O4SYDuXkJRvnni9cR5FUpraoehGeWmL7F52VKFhKTbfTQ6Kt_imdLEJvqk7RZxBS72j-cfN_m8q2x65fyJR4jt8LrQYUc5Aoms2NCv8B6zLeollQzfe7h_45G77bKh-DJZ8eAK1l73HMEjIgtToauY25JLFPbN2MQSLLLMw3kyJCtmps0TUdYQSnRhLINsep39qNCzVDP-uaiUthhDyx0BB-AHSpynx0QEtjSCovL0cnx1w-JfSo9pPLi7dbKayBNhiBCRxYQwLhbOwgTT3u-6n-LnR0isee39Xp0bM3EYSazmpAONPzyb4Q7Q",
+						"uuid": "367a885c-5527-4b0f-ba03-13532ad00006",
+						"disabled": true
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8",
+						"uuid": "c753b8d1-3938-4b89-b65f-5f197ee02f84",
+						"disabled": true
+					},
+					{
+						"key": "cookie",
+						"value": "_ga_NXY6JBL0TS=GS1.1.1706868488.5.0.1706868488.0.0.0",
+						"uuid": "40061c28-7642-4f3c-9bab-d88e9db251ca",
+						"disabled": true
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3000",
+						"uuid": "631c9dda-ebfd-400f-bb37-279f137f9bca",
+						"disabled": true
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"uuid": "69a55ebf-a556-4189-aa33-519d6a7ce433",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+						"uuid": "6e310d69-92ca-4ea6-bbbd-99dda69b4bd3",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "6b5e7fa7-b772-41c3-b802-72d920be4920",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"uuid": "cc278331-1a1c-44d1-ae07-fadf2c6cd483",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "089731ef-e225-4983-862a-ba2f0819b2cb",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "9317ad0b-ca8d-4719-b31e-dc62a8e7518d",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site",
+						"uuid": "45041b2b-1a43-4745-8f8d-71d4a2d67745",
+						"disabled": true
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+						"uuid": "6f1d567d-1ae3-4250-bab9-50b714e34b86",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text",
+						"uuid": "f5d4292e-2ccd-480a-9c4f-8bb0bd1224ed"
+					}
+				],
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/lambda/status?runId=90",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"lambda",
+						"status"
+					],
+					"query": [
+						{
+							"key": "runId",
+							"value": "90"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "execute lambda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "64efd2b7-6815-4e73-9f29-418e42f651f1"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "345d3568-f040-4e92-8b31-99fb2e3210d3"
+					},
+					{
+						"key": "authorization",
+						"value": "{{Authorization}}",
+						"uuid": "6b87839d-a2aa-47e1-89b4-54da47af774d"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8",
+						"uuid": "ec57b804-9a55-4c43-8cef-5f9ac8225737"
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3000",
+						"uuid": "961b1625-9fcc-411b-87c3-64ccc91212bf"
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"uuid": "d8527fef-e44e-47ac-ad0d-75d73635faf1"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+						"uuid": "81106b79-9d84-490b-a2c1-05436b836772"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "8439c4ed-1054-4f30-ad2b-ba41d76e5cd3"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\"",
+						"uuid": "63e55692-ea8c-405a-9b55-a92f6d579d72"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "c25de8de-315c-474c-8407-c191da3e7738"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "4755c8dd-88b8-4109-915b-1394d697551e"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site",
+						"uuid": "fb53dff0-9468-4957-9f09-1c8276c7fece"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+						"uuid": "307a24cc-e5f9-4517-9c5a-a8ae5a09b53e"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lambdaId\": \"61\",\n    \"argument\": [],\n    \"params\": {\n        \"projectId\": \"88\",\n        \"addressId\": \"49\"\n    },\n    \"environment\": {\n        \"baseApi\": {\n            \"domain\": \"\",\n            \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiMjc3MCIsInBob3RvIjoiaHR0cHM6Ly93ZXdvcmsucXBpYy5jbi93d3BpYzNhei84NTYxNzVfdjEtLWR3VEVTdWFPelR2XzE3MDIyNjA5MTQvMCIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iXSwiY2xpZW50X2lkIjoiYmVlczM2MC1haSIsInBob25lIjoiMTgxMjY0MTM1MzkiLCJzY29wZSI6ImJlZXMzNjAuYWkiLCJuYW1lIjoiU2lqaWUgSHVhbmciLCJpZCI6IjY1NzY3NjRjMzQxMjlkY2MzY2EzNWQ4YyIsImV4cCI6MTcxMzk2NjM2NCwiZW1haWwiOiJodWFuZ3NpamllQDlyZWFsbXMuY28iLCJqdGkiOiIzMzFiMTBhNi0yNGU1LTRjMGQtYTE0Ny0xY2Q0M2YzOGZkMjgiLCJ1c2VybmFtZSI6Imh1YW5nc2lqaWVAOXJlYWxtcy5jbyJ9.LWgBKBj4Sc9kJzgfmu6oUq8sPr08QXD37k0ddDtahMURQZd78muy9HYX-ig0Uwhs9-_NnuqZOqlIjeQq6dFrPoMyH_DpCjPEbhfoLzZ8IlJSnECddCLw1Zz6sZXUKmqlIhbibElpKXkbpu-0Z5Ma_49ElDvXEdkjnx0jj7nwqAbomWUzBS4XKV5YH-XdMO9Y55m5h1mz5q0F-zQoWcerdLlp-ekpImAzkd0SrVzkl0kSeaxJpyBOukojznFSpLng0cou7vqFmA6gJx8_7efXJFsc2xAUQvaNca9qX0azXqgMf6-xCjq4Yi5x334LNgBq4gmpo2w8RahvykXjKHwXzg\"\n        }\n    },\n    \"nonBlocking\": false,\n    \"comment\": \"Excute at 1713956587249.\"\n}"
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/lambda/61/execution",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"lambda",
+						"61",
+						"execution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trigger peregrine lambda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "c2ebd61f-79b0-45bf-bdc2-aa3b5127e867"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "e63b0013-5fe1-4fca-9c60-7e3004009758"
+					},
+					{
+						"key": "authorization",
+						"value": "{{Authorization}}",
+						"uuid": "fdf88227-4446-4136-98df-d1da9d71afd6"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8",
+						"uuid": "c8c4526d-d334-49fc-9d80-6f7ff057cbc1"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga_NXY6JBL0TS=GS1.1.1706868488.5.0.1706868488.0.0.0",
+						"uuid": "b853ce38-957f-4267-a5f8-e89c19447cc7"
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3000",
+						"uuid": "a8fc3578-70c0-4862-96fa-d6cabbe8a001"
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"uuid": "c12c6a5f-e19f-4532-b1da-500053bcb0d5"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+						"uuid": "61293bc4-e990-4c31-86b3-7fe5c07de9b5"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "2017c4b1-6e53-48cf-a5bd-a3e98d1cf736"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"uuid": "91e10e27-9033-4e1b-a9ab-486f8c199b97"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "baae8043-22b6-45ca-b1dd-024a35b72c07"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "d67f9c9e-b81b-4645-a011-98f047a55ca7"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site",
+						"uuid": "8773512f-44d0-4146-a4e8-43025e9db1c4"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+						"uuid": "252ca424-6b65-46db-ab80-3afed550d00d"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lambdaId\": \"73\",\n    \"argument\": [\n        {},\n        {},\n        {},\n        {},\n        {},\n        {},\n        {}\n    ],\n    \"params\": {\n        \"projectId\": \"1114\",\n        \"addressId\": \"443\"\n    },\n    \"environment\": {\n        \"baseApi\": {\n            \"domain\": \"https://qa-ai.9realms.co\",\n            \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiMjc3MCIsInBob3RvIjoiaHR0cHM6Ly93ZXdvcmsucXBpYy5jbi93d3BpYy81MjIzMDlfZFBkRk5mbE9SOGlGTEZKXzE2NjkwOTc0NzMvMCIsImF1dGhvcml0aWVzIjpbIlJPTEVfRklFTERfQ09PUkRJTkFUT1IiLCJST0xFX0FETUlOIiwiUk9MRV9QUk9DRVNTT1IiLCJST0xFX1BST0RVQ0VSIiwiUk9MRV9GSUVMRF9NQU5BR0VSIiwiUk9MRV9TQ0hFRFVMRVIiXSwiY2xpZW50X2lkIjoiYmVlczM2MC1haSIsInBob25lIjoiMTgxMzgyMzY1OTIiLCJzY29wZSI6ImJlZXMzNjAuYWkiLCJuYW1lIjoiSGVhbHRoeSIsImlkIjoiNjE4MjI0ZDkwMGE0ZjJlNmI5NmFhOTAxIiwiZXhwIjoxNzE0MDUyNDcxLCJlbWFpbCI6Ind1emhlbmthbmdAOXJlYWxtcy5jbyIsImp0aSI6IjAyMmZjYmUxLWNkZmYtNDJjZi04NzhmLTNmNmE3MTJkODViMiIsInVzZXJuYW1lIjoid3V6aGVua2FuZ0A5cmVhbG1zLmNvIn0.IeEqKXS8SILN9GnsfaVOyd55wKvo4Q6NdfGcaexB-5JVD2iMKrc9fP9mPdQ9WfmRNOFFLYE5Tqqdx8SIvH5jZgVteH0McHzcAXDrA_kxL-KV5OCCE1zwcDy1amk5tvyeq9K8rjI577VwnEdNLi0IOf34dKPyADqYfePdJ_Xv1kWwNF64Lde_rEjLEBjpsK-v93IDCOL1YAhB4cheMRPZ8WhjvrEHolipUUBkbLsFAoG8kI_zq-cXf7GsBsphIztCUNXq0S5MzPl0x89zfv_ZPriZsPDXyuhzOLrEEkSGFKrlb9S5oJvdPVZmrSi-6u_XYrsJU_GnZurLpmRcdN6vZg\"\n        }\n    },\n    \"nonBlocking\": true,\n    \"comment\": \"Excute at 1714018308575.\"\n}"
+				},
+				"url": {
+					"raw": "{{ai_host}}/apiv2/estintel/lambda/73/execution",
+					"host": [
+						"{{ai_host}}"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"lambda",
+						"73",
+						"execution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://test.bees360.ai/apiv2/estintel/lambda/25/execution",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"uuid": "1a901804-baf9-4339-94c0-b93f67c940dc"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-CN,zh;q=0.9",
+						"uuid": "ba2ae8bf-64e9-4e6c-88da-a362f325a958"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiMTA2MiIsInBob3RvIjoiaHR0cHM6Ly9yZXNvdXJjZS50ZXN0LmJlZXMzNjAuY29tL3Jlc291cmNlL3VzZXIvYTM2ODg5NTQtY2VkMC00N2ZmLTg1ZWMtNTMxMjYyOTQ3MjAyL2F2YXRhciIsImF1dGhvcml0aWVzIjpbIlJPTEVfQkVFUzM2MCIsIlJPTEVfQURNSU4iXSwiY2xpZW50X2lkIjoiYmVlczM2MC1haSIsInBob25lIjoiOC42MkUrMTIiLCJzY29wZSI6ImJlZXMzNjAuYWkiLCJuYW1lIjoiWmhlbmthbmcgV3UiLCJpZCI6IkdTOjEwNDk3MTY4MTY1NTU0MDMyMDA4OSIsImV4cCI6MTcxNDc0NTQzOSwiZW1haWwiOiJ6aGVua2FuZy53dUBiZWVzMzYwLmNvbSIsImp0aSI6IjIxOThiOGU0LTk0ZGItNDcyOS1iNWIwLTIwYWZiNTA1MmY4NyIsInVzZXJuYW1lIjoiR1M6emhlbmthbmcud3VAYmVlczM2MC5jb20ifQ.NxRCFAIKGONIsOynY0yIJqNF2_NyVivDlqs69dJ5TrOnvGHh2Jz8JV_d57VUkVClPVr6fbmKqNBMJDDNY5VFk3xuPGx3DDCDNjswZPOlL1YkUpWaakY_UloTvyAeTcK1HmHfXrQ3iOs4fVsyFKfLSXCVPPwx4O_w4vTlLZc0gd9gGsKU2uTfMSlX4lWOQ8EwXslgMOtbMW_prjztbSBJrB_2G7aJcOLr7ypGeC0x7j1UWf8wZgzoeDeHzeBPeHfkPHfUqy97AuxSP7w63r1soxMWWTmI3CFZIfSblImydUABSXV5nY9gbvy-uHwHaBD_ftu-8Zo9LDeLeVJ1vGrqag",
+						"uuid": "19018f08-b343-40ea-ac05-11231d8698d2"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8",
+						"uuid": "fda2dc83-db8c-4c70-93dd-3165a4b30dba"
+					},
+					{
+						"key": "cookie",
+						"value": "G_ENABLED_IDPS=google; G_ENABLED_IDPS=google; _ga=GA1.1.1209137721.1669198178; g_state={\"i_l\":0}; _ga_DQ34STVXXM=GS1.1.1714716507.1085.1.1714720418.0.0.0; _ga_F5QXCTEC2L=GS1.1.1714720794.786.1.1714720820.0.0.0",
+						"uuid": "7d17afe0-6d8a-4339-99cb-01008d458111"
+					},
+					{
+						"key": "origin",
+						"value": "https://test.bees360.ai",
+						"uuid": "70a9bcdd-befe-4520-bcc4-42245d41f758"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i",
+						"uuid": "492ae7c6-f8d5-4b9d-9602-c8994ba0054b"
+					},
+					{
+						"key": "referer",
+						"value": "https://test.bees360.ai/project/estintel/?projectId=1029694&tab=FSR_SWYFFT_4_POINT",
+						"uuid": "0a5911cc-3fb6-4417-89f7-2b7350f114c7"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"",
+						"uuid": "fbadd451-af73-44bb-9975-b21ab9eae39f"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"uuid": "fd4dee44-9ebf-4b19-a119-05e4ffd019d2"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"uuid": "6577e6a3-532a-4355-b18c-baa423f2b103"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"uuid": "3698aa1d-af1c-401a-9348-04c4af679b5a"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"uuid": "2feb6e70-e352-4347-aa65-92a3bed7ce8d"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin",
+						"uuid": "f0924bb3-c617-4c8a-8564-3ba7c1ea3505"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+						"uuid": "eaa211db-c8b7-4b7d-be58-ec41ce745788"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lambdaId\": \"25\",\n    \"argument\": [\n        {},\n        {},\n        {},\n        {},\n        {},\n        {},\n        {}\n    ],\n    \"params\": {\n        \"projectId\": \"1029694\",\n        \"addressId\": \"19560\"\n    },\n    \"environment\": {\n        \"baseApi\": {\n            \"domain\": \"https://test.bees360.ai\",\n            \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiMTA2MiIsInBob3RvIjoiaHR0cHM6Ly9yZXNvdXJjZS50ZXN0LmJlZXMzNjAuY29tL3Jlc291cmNlL3VzZXIvYTM2ODg5NTQtY2VkMC00N2ZmLTg1ZWMtNTMxMjYyOTQ3MjAyL2F2YXRhciIsImF1dGhvcml0aWVzIjpbIlJPTEVfQkVFUzM2MCIsIlJPTEVfQURNSU4iXSwiY2xpZW50X2lkIjoiYmVlczM2MC1haSIsInBob25lIjoiOC42MkUrMTIiLCJzY29wZSI6ImJlZXMzNjAuYWkiLCJuYW1lIjoiWmhlbmthbmcgV3UiLCJpZCI6IkdTOjEwNDk3MTY4MTY1NTU0MDMyMDA4OSIsImV4cCI6MTcxNDc0NTQzOSwiZW1haWwiOiJ6aGVua2FuZy53dUBiZWVzMzYwLmNvbSIsImp0aSI6IjIxOThiOGU0LTk0ZGItNDcyOS1iNWIwLTIwYWZiNTA1MmY4NyIsInVzZXJuYW1lIjoiR1M6emhlbmthbmcud3VAYmVlczM2MC5jb20ifQ.NxRCFAIKGONIsOynY0yIJqNF2_NyVivDlqs69dJ5TrOnvGHh2Jz8JV_d57VUkVClPVr6fbmKqNBMJDDNY5VFk3xuPGx3DDCDNjswZPOlL1YkUpWaakY_UloTvyAeTcK1HmHfXrQ3iOs4fVsyFKfLSXCVPPwx4O_w4vTlLZc0gd9gGsKU2uTfMSlX4lWOQ8EwXslgMOtbMW_prjztbSBJrB_2G7aJcOLr7ypGeC0x7j1UWf8wZgzoeDeHzeBPeHfkPHfUqy97AuxSP7w63r1soxMWWTmI3CFZIfSblImydUABSXV5nY9gbvy-uHwHaBD_ftu-8Zo9LDeLeVJ1vGrqag\"\n        }\n    },\n    \"nonBlocking\": true,\n    \"comment\": \"Excute at 1714720924052.\"\n}"
+				},
+				"url": {
+					"raw": "https://test.bees360.ai/apiv2/estintel/lambda/25/execution",
+					"protocol": "https",
+					"host": [
+						"test",
+						"bees360",
+						"ai"
+					],
+					"path": [
+						"apiv2",
+						"estintel",
+						"lambda",
+						"25",
+						"execution"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
